@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */; };
 		3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AD81FC4817B0081CD33 /* AppDelegate.m */; };
 		3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50ADB1FC4817B0081CD33 /* ViewController.m */; };
 		3AB50ADF1FC4817B0081CD33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB50ADD1FC4817B0081CD33 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFilterAbilityVC.h; sourceTree = "<group>"; };
+		3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFilterAbilityVC.m; sourceTree = "<group>"; };
 		3AB50AD41FC4817B0081CD33 /* DiSiYeMeiEr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSiYeMeiEr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB50AD71FC4817B0081CD33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AB50AD81FC4817B0081CD33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */ = {
+			isa = PBXGroup;
+			children = (
+				3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */,
+				3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */,
+			);
+			path = TextFilterAbilityVC;
+			sourceTree = "<group>";
+		};
 		3AB50ACB1FC4817B0081CD33 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */ = {
 			isa = PBXGroup;
 			children = (
+				3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */,
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
 				3AB50ADA1FC4817B0081CD33 /* ViewController.h */,
@@ -267,6 +280,7 @@
 			files = (
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
+				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,
 				3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,10 +447,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3DPJ4DW7A;
 				INFOPLIST_FILE = DiSiYeMeiEr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JiaChen-MacBook-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,10 +462,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3DPJ4DW7A;
 				INFOPLIST_FILE = DiSiYeMeiEr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JiaChen-MacBook-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "TextFilterAbilityVC.h"
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *test;
+
 
 @end
 
@@ -16,8 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+ 
+    [_test  addTarget:self action:@selector(abilityClick:) forControlEvents:UIControlEventTouchUpInside];
 }
+-(void)abilityClick:(id)btn{
+    TextFilterAbilityVC *textFilterVC = [[TextFilterAbilityVC alloc] init];
+     [self  presentViewController:textFilterVC  animated:YES completion:nil];
+}
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
