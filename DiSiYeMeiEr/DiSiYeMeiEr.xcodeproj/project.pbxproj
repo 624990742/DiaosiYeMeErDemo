@@ -16,6 +16,9 @@
 		3AB50AE71FC4817B0081CD33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AE61FC4817B0081CD33 /* main.m */; };
 		3AB50AF11FC4817B0081CD33 /* DiSiYeMeiErTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AF01FC4817B0081CD33 /* DiSiYeMeiErTests.m */; };
 		3AB50AFC1FC4817B0081CD33 /* DiSiYeMeiErUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AFB1FC4817B0081CD33 /* DiSiYeMeiErUITests.m */; };
+		3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA4FFC1FCC59E3006D5DAB /* CustomButtonVC.m */; };
+		3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */; };
+		3ACA50061FCC6673006D5DAB /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA50051FCC6673006D5DAB /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		3AB50AF71FC4817B0081CD33 /* DiSiYeMeiErUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiSiYeMeiErUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB50AFB1FC4817B0081CD33 /* DiSiYeMeiErUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiSiYeMeiErUITests.m; sourceTree = "<group>"; };
 		3AB50AFD1FC4817B0081CD33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACA4FFB1FCC59E3006D5DAB /* CustomButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButtonVC.h; sourceTree = "<group>"; };
+		3ACA4FFC1FCC59E3006D5DAB /* CustomButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButtonVC.m; sourceTree = "<group>"; };
+		3ACA50021FCC636C006D5DAB /* UIButton+customeBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+customeBtn.h"; sourceTree = "<group>"; };
+		3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+customeBtn.m"; sourceTree = "<group>"; };
+		3ACA50051FCC6673006D5DAB /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */ = {
 			isa = PBXGroup;
 			children = (
+				3ACA4FF91FCC593C006D5DAB /* customButtonVC */,
 				3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */,
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
@@ -120,6 +129,7 @@
 				3AB50ADB1FC4817B0081CD33 /* ViewController.m */,
 				3AB50ADD1FC4817B0081CD33 /* Main.storyboard */,
 				3AB50AE01FC4817B0081CD33 /* Assets.xcassets */,
+				3ACA50051FCC6673006D5DAB /* images.xcassets */,
 				3AB50AE21FC4817B0081CD33 /* LaunchScreen.storyboard */,
 				3AB50AE51FC4817B0081CD33 /* Info.plist */,
 				3AB50AE61FC4817B0081CD33 /* main.m */,
@@ -143,6 +153,25 @@
 				3AB50AFD1FC4817B0081CD33 /* Info.plist */,
 			);
 			path = DiSiYeMeiErUITests;
+			sourceTree = "<group>";
+		};
+		3ACA4FF91FCC593C006D5DAB /* customButtonVC */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA4FFE1FCC60BB006D5DAB /* BtnCategory */,
+				3ACA4FFB1FCC59E3006D5DAB /* CustomButtonVC.h */,
+				3ACA4FFC1FCC59E3006D5DAB /* CustomButtonVC.m */,
+			);
+			path = customButtonVC;
+			sourceTree = "<group>";
+		};
+		3ACA4FFE1FCC60BB006D5DAB /* BtnCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA50021FCC636C006D5DAB /* UIButton+customeBtn.h */,
+				3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */,
+			);
+			path = BtnCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB50AE41FC4817B0081CD33 /* LaunchScreen.storyboard in Resources */,
+				3ACA50061FCC6673006D5DAB /* images.xcassets in Resources */,
 				3AB50AE11FC4817B0081CD33 /* Assets.xcassets in Resources */,
 				3AB50ADF1FC4817B0081CD33 /* Main.storyboard in Resources */,
 			);
@@ -279,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
+				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
+				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,
 				3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */,
 			);

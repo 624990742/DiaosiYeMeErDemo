@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FJ3-Lr-PHT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="S8t-tb-5ww">
+            <objects>
+                <navigationController id="FJ3-Lr-PHT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3n-tP-OD6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B8m-tI-tP5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RD-bk-k2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135" y="-252"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -23,27 +39,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3e-W0-acl">
-                                <rect key="frame" x="31" y="35" width="88" height="40"/>
+                                <rect key="frame" x="26" y="79" width="88" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6kI-N8-tx8"/>
                                 </constraints>
                                 <state key="normal" title="text过滤功能"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olp-pu-vIV">
+                                <rect key="frame" x="119" y="79" width="91" height="40"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4wq-RJ-6BE"/>
+                                </constraints>
+                                <state key="normal" title="自定义button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="V3e-W0-acl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="E8G-RJ-YBu"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V3e-W0-acl" secondAttribute="trailingMargin" id="TYQ-pL-5hb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Olp-pu-vIV" secondAttribute="trailing" constant="20" symbolic="YES" id="9TY-WX-7nk"/>
+                            <constraint firstItem="Olp-pu-vIV" firstAttribute="top" secondItem="V3e-W0-acl" secondAttribute="top" id="CCh-YE-tKC"/>
+                            <constraint firstItem="V3e-W0-acl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="E8G-RJ-YBu"/>
+                            <constraint firstItem="Olp-pu-vIV" firstAttribute="leading" secondItem="V3e-W0-acl" secondAttribute="trailing" constant="5" id="Lfo-vw-ioA"/>
                             <constraint firstItem="V3e-W0-acl" firstAttribute="top" secondItem="WRO-Zg-scX" secondAttribute="bottom" constant="15" id="e6O-0H-Vmn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AGO-bQ-mi7"/>
                     <connections>
-                        <outlet property="test" destination="V3e-W0-acl" id="69B-Sa-FXb"/>
+                        <outlet property="customButton" destination="Olp-pu-vIV" id="Tr7-NB-xdK"/>
+                        <outlet property="textFieldAbility" destination="V3e-W0-acl" id="ll5-gn-MZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="-428" y="-252"/>
         </scene>
     </scenes>
 </document>
