@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FJ3-Lr-PHT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FJ3-Lr-PHT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,36 +37,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3e-W0-acl">
-                                <rect key="frame" x="26" y="79" width="88" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="6kI-N8-tx8"/>
-                                </constraints>
-                                <state key="normal" title="text过滤功能"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olp-pu-vIV">
-                                <rect key="frame" x="119" y="79" width="91" height="40"/>
-                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4wq-RJ-6BE"/>
-                                </constraints>
-                                <state key="normal" title="自定义button"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fpo-j5-nVQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FXr-af-DWD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7x5-6q-pwB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Olp-pu-vIV" secondAttribute="trailing" constant="20" symbolic="YES" id="9TY-WX-7nk"/>
-                            <constraint firstItem="Olp-pu-vIV" firstAttribute="top" secondItem="V3e-W0-acl" secondAttribute="top" id="CCh-YE-tKC"/>
-                            <constraint firstItem="V3e-W0-acl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="E8G-RJ-YBu"/>
-                            <constraint firstItem="Olp-pu-vIV" firstAttribute="leading" secondItem="V3e-W0-acl" secondAttribute="trailing" constant="5" id="Lfo-vw-ioA"/>
-                            <constraint firstItem="V3e-W0-acl" firstAttribute="top" secondItem="WRO-Zg-scX" secondAttribute="bottom" constant="15" id="e6O-0H-Vmn"/>
+                            <constraint firstItem="Fpo-j5-nVQ" firstAttribute="top" secondItem="WRO-Zg-scX" secondAttribute="bottom" id="3W8-MC-G89"/>
+                            <constraint firstItem="Fpo-j5-nVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="49I-xu-kz3"/>
+                            <constraint firstItem="SQm-Mu-z9E" firstAttribute="top" secondItem="Fpo-j5-nVQ" secondAttribute="bottom" id="Jog-HH-3co"/>
+                            <constraint firstAttribute="trailing" secondItem="Fpo-j5-nVQ" secondAttribute="trailing" id="aHY-4L-XUf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AGO-bQ-mi7"/>
                     <connections>
-                        <outlet property="customButton" destination="Olp-pu-vIV" id="Tr7-NB-xdK"/>
-                        <outlet property="textFieldAbility" destination="V3e-W0-acl" id="ll5-gn-MZr"/>
+                        <outlet property="DemoTableView" destination="Fpo-j5-nVQ" id="34u-oq-M1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

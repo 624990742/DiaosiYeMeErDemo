@@ -9,45 +9,55 @@
 #import "ViewController.h"
 #import"TextFilterAbilityVC.h"
 #import "CustomButtonVC.h"
-@interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *textFieldAbility;
-@property (strong, nonatomic) IBOutlet UIButton *customButton;//自定义button
-
-
+#import "JCStreamUsageVC.h"
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
+@property(nonatomic,strong) NSArray *dataScource;
 @end
 
 @implementation ViewController
+- (NSArray *)dataScource{
+    if (!_dataScource) {
+        _dataScource = @[@"NSStream流的使用"];
+    }
+    return _dataScource;
+}
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.title = @"demo集合";
-    [self createButton];
+    self.navigationItem.title = @"Demo集合";
    
-
+   
 }
--(void)abilityClick:(id)btn{
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
  
-    TextFilterAbilityVC *textFilterVC = [[TextFilterAbilityVC alloc] init];
-    [self.navigationController  pushViewController:textFilterVC animated:YES];
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.dataScource.count;
 }
 
--(void)customBtnClick:(id)btn{
-    
-    CustomButtonVC *customBtnVC = [[CustomButtonVC  alloc] init];
-    [self.navigationController  pushViewController:customBtnVC animated:YES];
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.dataScource[indexPath.row];
+  return cell;
 }
 
-#pragma mark - 自定义
-
--(void)createButton{
-        [_textFieldAbility  addTarget:self action:@selector(abilityClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-        [_customButton  addTarget:self action:@selector(customBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
+    [self.navigationController pushViewController:testVC animated:YES];
 }
-
-
-
 
 
 

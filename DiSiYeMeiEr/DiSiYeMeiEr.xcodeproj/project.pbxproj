@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */; };
 		3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */; };
 		3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AD81FC4817B0081CD33 /* AppDelegate.m */; };
 		3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50ADB1FC4817B0081CD33 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCStreamUsageVC.h; sourceTree = "<group>"; };
+		321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCStreamUsageVC.m; sourceTree = "<group>"; };
 		3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFilterAbilityVC.h; sourceTree = "<group>"; };
 		3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFilterAbilityVC.m; sourceTree = "<group>"; };
 		3AB50AD41FC4817B0081CD33 /* DiSiYeMeiEr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSiYeMeiEr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321DD85322662C7B00A7DC2B /* StreamUsageVC */ = {
+			isa = PBXGroup;
+			children = (
+				321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */,
+				321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */,
+			);
+			path = StreamUsageVC;
+			sourceTree = "<group>";
+		};
 		3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */ = {
 			isa = PBXGroup;
 			children = (
+				321DD85322662C7B00A7DC2B /* StreamUsageVC */,
 				3ACA4FF91FCC593C006D5DAB /* customButtonVC */,
 				3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */,
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
@@ -308,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
@@ -477,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3DPJ4DW7A;
+				DEVELOPMENT_TEAM = DT5ULQQR52;
 				INFOPLIST_FILE = DiSiYeMeiEr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3DPJ4DW7A;
+				DEVELOPMENT_TEAM = DT5ULQQR52;
 				INFOPLIST_FILE = DiSiYeMeiEr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
