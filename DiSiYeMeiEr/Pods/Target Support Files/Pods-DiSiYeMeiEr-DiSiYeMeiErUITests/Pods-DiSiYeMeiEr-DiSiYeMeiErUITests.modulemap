@@ -1,0 +1,6 @@
+framework module Pods_DiSiYeMeiEr_DiSiYeMeiErUITests {
+  umbrella header "Pods-DiSiYeMeiEr-DiSiYeMeiErUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

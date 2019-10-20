@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-#import"TextFilterAbilityVC.h"
 #import "CustomButtonVC.h"
 #import "JCStreamUsageVC.h"
+#import "JCMasExampleListViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -18,7 +19,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"NSStream流的使用"];
+        _dataScource = @[@"MasonryDemo练习",@"NSStream流的使用"];
     }
     return _dataScource;
 }
@@ -54,9 +55,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
- 
-    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
-    [self.navigationController pushViewController:testVC animated:YES];
+    JCMasExampleListViewController *_examplisVC = [[JCMasExampleListViewController alloc] init];
+    [self.navigationController pushViewController:_examplisVC animated:YES];
+    
+//    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
+//    [self.navigationController pushViewController:testVC animated:YES];
 }
 
 

@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    NSLog(@"测试打印：%@",[NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)]);
     return YES;
 }
 
