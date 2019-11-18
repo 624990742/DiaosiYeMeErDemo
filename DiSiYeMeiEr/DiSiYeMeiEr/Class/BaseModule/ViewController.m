@@ -10,6 +10,7 @@
 #import "CustomButtonVC.h"
 #import "JCStreamUsageVC.h"
 #import "JCMasExampleListViewController.h"
+#import "JCAssociatedObjectViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
@@ -19,7 +20,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"NSStream流的使用"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用"];
     }
     return _dataScource;
 }
@@ -55,9 +56,24 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    JCMasExampleListViewController *_examplisVC = [[JCMasExampleListViewController alloc] init];
-    [self.navigationController pushViewController:_examplisVC animated:YES];
     
+    switch (indexPath.row) {
+        case 0:{
+            JCMasExampleListViewController *_examplisVC = [[JCMasExampleListViewController alloc] init];
+            [self.navigationController pushViewController:_examplisVC animated:YES];
+            
+            break;
+        }
+        case 1:
+        {
+            [self.navigationController pushViewController:[JCAssociatedObjectViewController new] animated:YES];
+            
+            break;
+        }
+        default:
+            break;
+    }
+  
 //    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
 //    [self.navigationController pushViewController:testVC animated:YES];
 }

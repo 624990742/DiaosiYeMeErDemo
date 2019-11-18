@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05785E8EC765449FF84CDE21 /* Pods_DiSiYeMeiEr_DiSiYeMeiErUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41012B514D2072AF0819CBA /* Pods_DiSiYeMeiEr_DiSiYeMeiErUITests.framework */; };
 		321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */; };
+		32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
 		329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722C235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m */; };
 		329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722F235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCStreamUsageVC.h; sourceTree = "<group>"; };
 		321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCStreamUsageVC.m; sourceTree = "<group>"; };
+		32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAssociatedObjectViewController.h; sourceTree = "<group>"; };
+		32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAssociatedObjectViewController.m; sourceTree = "<group>"; };
 		329F721F235C38FD00D2644B /* disiYeMeiPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disiYeMeiPch.pch; sourceTree = "<group>"; };
 		329F7222235C3A5200D2644B /* libsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libsHeader.h; sourceTree = "<group>"; };
 		329F7228235C3B5600D2644B /* JCMasExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMasExampleListViewController.h; sourceTree = "<group>"; };
@@ -173,6 +176,23 @@
 			path = StreamUsageVC;
 			sourceTree = "<group>";
 		};
+		32392C4E2382F09300D440A2 /* RuntimeModule */ = {
+			isa = PBXGroup;
+			children = (
+				32392C4F2382F0AE00D440A2 /* AssociatedObject */,
+			);
+			path = RuntimeModule;
+			sourceTree = "<group>";
+		};
+		32392C4F2382F0AE00D440A2 /* AssociatedObject */ = {
+			isa = PBXGroup;
+			children = (
+				32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */,
+				32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */,
+			);
+			path = AssociatedObject;
+			sourceTree = "<group>";
+		};
 		329F7220235C390400D2644B /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +215,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32392C4E2382F09300D440A2 /* RuntimeModule */,
 				329F7224235C3AC600D2644B /* MasonryLayoutModule */,
 				32059B3E235C387A00407C04 /* BaseModule */,
 				32059B3D235C384C00407C04 /* OtherModule */,
@@ -686,6 +707,7 @@
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,
+				32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,
 				3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */,
