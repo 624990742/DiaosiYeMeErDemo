@@ -11,7 +11,7 @@
 #import "JCStreamUsageVC.h"
 #import "JCMasExampleListViewController.h"
 #import "JCAssociatedObjectViewController.h"
-
+#import "JCSpeciesPatternViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -20,7 +20,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式"];
     }
     return _dataScource;
 }
@@ -70,9 +70,16 @@
             
             break;
         }
+        case 2:
+        {
+            [self.navigationController pushViewController:[JCSpeciesPatternViewController new] animated:YES];
+                  
+        }
         default:
             break;
     }
+    
+    
   
 //    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
 //    [self.navigationController pushViewController:testVC animated:YES];

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		05785E8EC765449FF84CDE21 /* Pods_DiSiYeMeiEr_DiSiYeMeiErUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41012B514D2072AF0819CBA /* Pods_DiSiYeMeiEr_DiSiYeMeiErUITests.framework */; };
+		320D61D2239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D1239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m */; };
+		320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D4239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m */; };
+		320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */; };
 		321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */; };
 		32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
@@ -19,6 +22,8 @@
 		329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7242235C631000D2644B /* JCUseingConstantsView.m */; };
 		329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7246235C694800D2644B /* JCCompositeEdgesView.m */; };
 		329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F724A235C6D0F00D2644B /* JCAspectFitView.m */; };
+		32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */; };
+		32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */; };
 		3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */; };
 		3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AD81FC4817B0081CD33 /* AppDelegate.m */; };
 		3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50ADB1FC4817B0081CD33 /* ViewController.m */; };
@@ -53,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320D61D0239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesEmployeeTypeDeveloper.h; sourceTree = "<group>"; };
+		320D61D1239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesEmployeeTypeDeveloper.m; sourceTree = "<group>"; };
+		320D61D3239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesEmployeeTypeDesigner.h; sourceTree = "<group>"; };
+		320D61D4239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesEmployeeTypeDesigner.m; sourceTree = "<group>"; };
+		320D61D6239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesEmployeeTypeFinace.h; sourceTree = "<group>"; };
+		320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesEmployeeTypeFinace.m; sourceTree = "<group>"; };
 		321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCStreamUsageVC.h; sourceTree = "<group>"; };
 		321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCStreamUsageVC.m; sourceTree = "<group>"; };
 		32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAssociatedObjectViewController.h; sourceTree = "<group>"; };
@@ -77,6 +88,10 @@
 		329F7246235C694800D2644B /* JCCompositeEdgesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCompositeEdgesView.m; sourceTree = "<group>"; };
 		329F7249235C6D0F00D2644B /* JCAspectFitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAspectFitView.h; sourceTree = "<group>"; };
 		329F724A235C6D0F00D2644B /* JCAspectFitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAspectFitView.m; sourceTree = "<group>"; };
+		32C53A4C23977A9300E9EEEE /* JCSpeciesPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternViewController.h; sourceTree = "<group>"; };
+		32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternViewController.m; sourceTree = "<group>"; };
+		32C53A5023977B7B00E9EEEE /* JCSpeciesPatternObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternObject.h; sourceTree = "<group>"; };
+		32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternObject.m; sourceTree = "<group>"; };
 		3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFilterAbilityVC.h; sourceTree = "<group>"; };
 		3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFilterAbilityVC.m; sourceTree = "<group>"; };
 		3AB50AD41FC4817B0081CD33 /* DiSiYeMeiEr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSiYeMeiEr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,13 +154,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32059B3C235C382400407C04 /* LayoutViewModule */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LayoutViewModule;
-			sourceTree = "<group>";
-		};
 		32059B3D235C384C00407C04 /* OtherModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +167,6 @@
 		32059B3E235C387A00407C04 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
-				32059B3C235C382400407C04 /* LayoutViewModule */,
 				3AB50ADD1FC4817B0081CD33 /* Main.storyboard */,
 				3AB50ADA1FC4817B0081CD33 /* ViewController.h */,
 				3AB50ADB1FC4817B0081CD33 /* ViewController.m */,
@@ -215,6 +222,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32C53A4B23977A5600E9EEEE /* SpeciesPattern */,
 				32392C4E2382F09300D440A2 /* RuntimeModule */,
 				329F7224235C3AC600D2644B /* MasonryLayoutModule */,
 				32059B3E235C387A00407C04 /* BaseModule */,
@@ -342,6 +350,31 @@
 				329F724A235C6D0F00D2644B /* JCAspectFitView.m */,
 			);
 			path = aspectFitView;
+			sourceTree = "<group>";
+		};
+		32C53A4B23977A5600E9EEEE /* SpeciesPattern */ = {
+			isa = PBXGroup;
+			children = (
+				32C53A4F23977B5000E9EEEE /* SpeciesPattern */,
+				32C53A4C23977A9300E9EEEE /* JCSpeciesPatternViewController.h */,
+				32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */,
+			);
+			path = SpeciesPattern;
+			sourceTree = "<group>";
+		};
+		32C53A4F23977B5000E9EEEE /* SpeciesPattern */ = {
+			isa = PBXGroup;
+			children = (
+				32C53A5023977B7B00E9EEEE /* JCSpeciesPatternObject.h */,
+				32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */,
+				320D61D0239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.h */,
+				320D61D1239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m */,
+				320D61D3239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.h */,
+				320D61D4239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m */,
+				320D61D6239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.h */,
+				320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */,
+			);
+			path = SpeciesPattern;
 			sourceTree = "<group>";
 		};
 		3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */ = {
@@ -694,12 +727,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320D61D2239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m in Sources */,
 				329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */,
 				329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */,
+				32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */,
 				329F723F235C613800D2644B /* JCRemakeConstraintsView.m in Sources */,
 				321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
+				320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */,
+				320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */,
 				329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */,
 				329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */,
 				329F7234235C404000D2644B /* JCBasicLayoutView.m in Sources */,
@@ -708,6 +745,7 @@
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,
 				32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */,
+				32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,
 				3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */,
