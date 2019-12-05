@@ -20,7 +20,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式",@"多线程"];
     }
     return _dataScource;
 }
