@@ -21,7 +21,7 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
 
 - (NSArray *)titleDataArr{
     if (!_titleDataArr) {
-        _titleDataArr = @[@"test1",@"test2",@"test3",@"test4",@"test5"];
+        _titleDataArr = @[@"test1",@"test2",@"方法交换例子",@"自定义方法交换",@"万能跳"];
     }
     return _titleDataArr;
 }
@@ -48,6 +48,7 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
         
         UIButton *btn  = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.tag = (index + 1) *1000000;
+        btn.titleLabel.font = [UIFont systemFontOfSize:10];
         [btn setTitle:self.titleDataArr[index] forState:UIControlStateNormal];
         btn.backgroundColor = [UIColor RandomColor];//随机颜色
         [btn addTarget:self action:@selector(btnClickEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -88,7 +89,7 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
             break;
             
         case  4000000:
-            
+            [self testDemo4];
             break;
             
         case  5000000:
@@ -157,24 +158,6 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
 
 #pragma mark - 方法调配技术”黑盒方法“
 
-/**
- * Exchanges the implementations of two methods.
- *
- * @param m1 Method to exchange with second method.
- * @param m2 Method to exchange with first method.
- *
- * @note This is an atomic version of the following:
- *  \code
- *  IMP imp1 = method_getImplementation(m1);
- *  IMP imp2 = method_getImplementation(m2);
- *  method_setImplementation(m1, imp2);
- *  method_setImplementation(m2, imp1);
- *  \endcode
- */
-//OBJC_EXPORT void
-//method_exchangeImplementations(Method _Nonnull m1, Method _Nonnull m2)
-//OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
-
 - (void)testDemo3{
     
 //    id (* IMP)(id,SEL,.....)
@@ -195,7 +178,6 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
  方法交换后
    此函数的两个参数表示待交换的两个方法实现，
    void method_exchangeimplementations(Method ml, Method m2J
- 
  而方法实现则可通过下列函数获得：
   Method class_getinstanceMethod(Class aClass, SEL aSelector)
   */
@@ -215,8 +197,16 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
     NSString *uppercaseString_after = [tesString uppercaseString];
     NSLog(@"uppercaseString = %@",uppercaseString_after);
     
-    
-    
+}
+
+//自定义方法交换
+- (void)testDemo4{
+    Method testOriginalMethod = class_getInstanceMethod([NSString class], @selector(lowercaseString));
+    Method testSwappedMethod = class_getInstanceMethod([NSString class], @selector(JC_customLowercaseString));
+    method_exchangeImplementations(testOriginalMethod, testSwappedMethod);
+    NSString *string = @"Thls iS tHe StRiNg";
+    NSString *lowercaseString = [string uppercaseString];
+//    NSLog(@"自定义===》%@",lowercaseString);
 }
 
 

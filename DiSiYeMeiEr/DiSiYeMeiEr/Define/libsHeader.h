@@ -20,6 +20,8 @@
 #define MAS_SHORTHAND_GLOBALS
 #import <Masonry.h>
 #import "UIColor+JCColorCategory.h"
+#import "NSString+JCMethond.h"
+
 
 #endif
 
