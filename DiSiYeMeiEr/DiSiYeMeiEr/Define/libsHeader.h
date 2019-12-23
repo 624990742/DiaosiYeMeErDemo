@@ -19,6 +19,7 @@
 //define this constant if you want to enable auto-boxing for default syntax
 #define MAS_SHORTHAND_GLOBALS
 #import <Masonry.h>
+#import "UIColor+JCColorCategory.h"
 
 #endif
 

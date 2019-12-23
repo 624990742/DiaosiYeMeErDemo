@@ -24,6 +24,8 @@
 		329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F724A235C6D0F00D2644B /* JCAspectFitView.m */; };
 		32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */; };
 		32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */; };
+		32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */; };
+		32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */; };
 		3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */; };
 		3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AD81FC4817B0081CD33 /* AppDelegate.m */; };
 		3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50ADB1FC4817B0081CD33 /* ViewController.m */; };
@@ -92,6 +94,10 @@
 		32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternViewController.m; sourceTree = "<group>"; };
 		32C53A5023977B7B00E9EEEE /* JCSpeciesPatternObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternObject.h; sourceTree = "<group>"; };
 		32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternObject.m; sourceTree = "<group>"; };
+		32F8E38B23B09065009F9041 /* JCMoreViewOrButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMoreViewOrButton.h; sourceTree = "<group>"; };
+		32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMoreViewOrButton.m; sourceTree = "<group>"; };
+		32F8E38F23B092C9009F9041 /* UIColor+JCColorCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCColorCategory.h"; sourceTree = "<group>"; };
+		32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCColorCategory.m"; sourceTree = "<group>"; };
 		3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFilterAbilityVC.h; sourceTree = "<group>"; };
 		3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFilterAbilityVC.m; sourceTree = "<group>"; };
 		3AB50AD41FC4817B0081CD33 /* DiSiYeMeiEr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSiYeMeiEr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +228,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32F8E38E23B09269009F9041 /* Cateory */,
 				32C53A4B23977A5600E9EEEE /* SpeciesPattern */,
 				32392C4E2382F09300D440A2 /* RuntimeModule */,
 				329F7224235C3AC600D2644B /* MasonryLayoutModule */,
@@ -234,7 +241,6 @@
 		329F7224235C3AC600D2644B /* MasonryLayoutModule */ = {
 			isa = PBXGroup;
 			children = (
-				329F7227235C3B3000D2644B /* Model */,
 				329F7226235C3B2600D2644B /* view */,
 				329F7225235C3AE600D2644B /* controller */,
 			);
@@ -254,6 +260,7 @@
 		329F7226235C3B2600D2644B /* view */ = {
 			isa = PBXGroup;
 			children = (
+				32F8E38A23B0904B009F9041 /* moreViewOrButton */,
 				329F7248235C6CFC00D2644B /* aspectFitView */,
 				329F7244235C693200D2644B /* compositeEdges */,
 				329F7240235C62F000D2644B /* useingConstants */,
@@ -262,13 +269,6 @@
 				329F7231235C402500D2644B /* basicLayout */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		329F7227235C3B3000D2644B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		329F7231235C402500D2644B /* basicLayout */ = {
@@ -375,6 +375,24 @@
 				320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */,
 			);
 			path = SpeciesPattern;
+			sourceTree = "<group>";
+		};
+		32F8E38A23B0904B009F9041 /* moreViewOrButton */ = {
+			isa = PBXGroup;
+			children = (
+				32F8E38B23B09065009F9041 /* JCMoreViewOrButton.h */,
+				32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */,
+			);
+			path = moreViewOrButton;
+			sourceTree = "<group>";
+		};
+		32F8E38E23B09269009F9041 /* Cateory */ = {
+			isa = PBXGroup;
+			children = (
+				32F8E38F23B092C9009F9041 /* UIColor+JCColorCategory.h */,
+				32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */,
+			);
+			path = Cateory;
 			sourceTree = "<group>";
 		};
 		3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */ = {
@@ -733,6 +751,7 @@
 				32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */,
 				329F723F235C613800D2644B /* JCRemakeConstraintsView.m in Sources */,
 				321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */,
+				32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
 				320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */,
@@ -745,6 +764,7 @@
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,
 				32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */,
+				32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */,
 				32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,

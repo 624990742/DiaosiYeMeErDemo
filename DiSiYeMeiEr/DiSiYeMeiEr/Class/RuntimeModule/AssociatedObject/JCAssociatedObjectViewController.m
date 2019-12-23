@@ -34,6 +34,15 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
     
     
     
+    for (NSInteger index = 0; index < 20; index++) {
+        
+    }
+    
+    
+    
+    
+    
+    
     
     UIButton *btn2 = [UIButton  buttonWithType:UIButtonTypeCustom];
     [btn2 addTarget:self action:@selector(testDemo2) forControlEvents:UIControlEventTouchUpInside];

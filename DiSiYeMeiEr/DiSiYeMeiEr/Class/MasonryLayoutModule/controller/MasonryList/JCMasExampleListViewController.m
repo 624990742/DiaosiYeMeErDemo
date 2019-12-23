@@ -15,6 +15,7 @@
 #import "JCUseingConstantsView.h"
 #import "JCCompositeEdgesView.h"
 #import "JCAspectFitView.h"
+#import "JCMoreViewOrButton.h"
 
 
 
@@ -47,10 +48,9 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
       
         [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用约束" viewClass:JCUseingConstantsView.class],
        [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用内边距添加约束" viewClass:JCCompositeEdgesView.class],
-      [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用内边距添加约束" viewClass:JCAspectFitView.class],
-      
-      
-      
+      [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用内边距添加约束" viewClass:JCAspectFitView.class], [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"多个View或者多个Button布局" viewClass:JCMoreViewOrButton.class],
+    
+
       ];
     
     
