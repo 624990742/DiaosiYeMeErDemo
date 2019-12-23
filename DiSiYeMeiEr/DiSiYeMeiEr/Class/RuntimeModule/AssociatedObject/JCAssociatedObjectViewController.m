@@ -8,8 +8,6 @@
 
 #import "JCAssociatedObjectViewController.h"
 #import <objc/runtime.h>
-#import<objc/message.h>//消息机制
-#import "JCEocAutoDictionary.h"
 static void *kAlertyViewKey = @"kAlertyViewKey";
 @interface JCAssociatedObjectViewController ()
 @property(nonatomic,assign)NSInteger testIndex;
@@ -22,26 +20,6 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
     self.title = @"Runtime使用~关联对象";
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self msgTestDemo];
-    
-}
-
-
-
-#pragma mark - 动态方法解析
--(void)msgTestDemo{
-    JCEocAutoDictionary  *dict = [JCEocAutoDictionary new];
-    dict.date = [NSDate dateWithTimeIntervalSince1970:475372800];
-    NSLog(@"dict.date=%@",dict.date);
-    
-
-}
-
-
-
-#pragma mark - 关联对象测试
-
-- (void)setupAssociatedObjectInterface{
     UIButton *btn1 = [UIButton  buttonWithType:UIButtonTypeCustom];
     [btn1 setTitle:@"使用代理" forState:UIControlStateNormal];
     btn1.backgroundColor = [UIColor orangeColor];
@@ -55,6 +33,8 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
     }];
     
     
+    
+    
     UIButton *btn2 = [UIButton  buttonWithType:UIButtonTypeCustom];
     [btn2 addTarget:self action:@selector(testDemo2) forControlEvents:UIControlEventTouchUpInside];
     [btn2 setTitle:@"关联对象" forState:UIControlStateNormal];
@@ -66,9 +46,11 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
         make.size.equalTo(CGSizeMake(160, 50));
     }];
     
+    
 }
 
-//使用代理实现弹窗
+
+#pragma mark - 使用代理实现弹窗
 - (void)testDemo1{
     self.testIndex = 1;
     UIAlertView *alerty = [[UIAlertView  alloc] initWithTitle:@"使用代理的提示框" message:@"玩一玩" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
@@ -87,12 +69,17 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
         }else{
             NSLog(@"确定");
         }
-  
+        
+        
     }
   
 }
 
-// 关联对象
+
+
+
+
+#pragma mark - 关联对象
 
 - (void)testDemo2{
     self.testIndex = 2;
