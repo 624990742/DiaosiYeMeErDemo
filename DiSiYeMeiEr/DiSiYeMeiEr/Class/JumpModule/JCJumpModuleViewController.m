@@ -65,7 +65,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
     cell.textLabel.text = @"测试";
     cell.detailTextLabel.text = @"就只是测试一下git";
-    
 //    cell.textLabel.text = [[self.dataSource objectAtIndex:indexPath.row] objectForKey:@"title"];
     
     return cell;
