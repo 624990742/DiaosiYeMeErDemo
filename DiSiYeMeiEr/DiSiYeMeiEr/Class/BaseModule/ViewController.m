@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Demo集合";
-   
+    self.view.backgroundColor = [UIColor redColor];
    
 }
 
@@ -52,6 +52,7 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     cell.textLabel.text = self.dataScource[indexPath.row];
+    cell.backgroundColor = [UIColor orangeColor];
   return cell;
 }
 
