@@ -9,6 +9,8 @@
 #import "JCSpeciesPatternViewController.h"
 #import "JCSpeciesPatternObject.h"
 @interface JCSpeciesPatternViewController ()
+@property(nonatomic,copy) NSString * isCheckDetail;
+@property(nonatomic,strong) NSArray *desArr;
 
 @end
 
@@ -19,6 +21,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self speciesPatternTest];
+    
+    for (NSString *str in self.desArr) {
+        NSLog(@"数组中元素：%@",str);
+    }
+    
+//    NSLog(@"JCSpeciesPatternViewController==>%@,desArr==>%@",self.isCheckDetail,self.desArr);
 }
 
 

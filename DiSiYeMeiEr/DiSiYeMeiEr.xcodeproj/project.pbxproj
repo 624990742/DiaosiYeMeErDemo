@@ -12,6 +12,7 @@
 		320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D4239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m */; };
 		320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */; };
 		321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */; };
+		32312AE023B1E0DF00381E23 /* WBViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */; };
 		32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
 		329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722C235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m */; };
@@ -70,6 +71,8 @@
 		320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesEmployeeTypeFinace.m; sourceTree = "<group>"; };
 		321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCStreamUsageVC.h; sourceTree = "<group>"; };
 		321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCStreamUsageVC.m; sourceTree = "<group>"; };
+		32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewControllerManager.m; sourceTree = "<group>"; };
+		32312ADF23B1E0DF00381E23 /* WBViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewControllerManager.h; sourceTree = "<group>"; };
 		32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAssociatedObjectViewController.h; sourceTree = "<group>"; };
 		32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAssociatedObjectViewController.m; sourceTree = "<group>"; };
 		329F721F235C38FD00D2644B /* disiYeMeiPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disiYeMeiPch.pch; sourceTree = "<group>"; };
@@ -195,6 +198,15 @@
 			path = StreamUsageVC;
 			sourceTree = "<group>";
 		};
+		32312ADD23B1E0DF00381E23 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */,
+				32312ADF23B1E0DF00381E23 /* WBViewControllerManager.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		32392C4E2382F09300D440A2 /* RuntimeModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +246,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32312ADD23B1E0DF00381E23 /* Library */,
 				32F8E39523B0C128009F9041 /* JumpModule */,
 				32C53A4B23977A5600E9EEEE /* SpeciesPattern */,
 				32392C4E2382F09300D440A2 /* RuntimeModule */,
@@ -770,6 +783,7 @@
 				32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */,
 				329F723F235C613800D2644B /* JCRemakeConstraintsView.m in Sources */,
 				321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */,
+				32312AE023B1E0DF00381E23 /* WBViewControllerManager.m in Sources */,
 				32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,

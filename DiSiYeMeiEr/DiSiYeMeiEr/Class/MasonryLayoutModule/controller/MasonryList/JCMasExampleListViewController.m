@@ -21,7 +21,10 @@
 
 static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 @interface JCMasExampleListViewController ()
+@property (nonatomic, strong) NSString *blankTitleTest;
+
 @property (nonatomic, strong) NSArray *exampleControllers;
+
 @end
 
 @implementation JCMasExampleListViewController
@@ -40,7 +43,7 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 - (instancetype)init{
     if (!self) return nil;
     self.title = @"Masonry演示demo";
-    
+ 
     self.exampleControllers = @[
       [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry基本用法" viewClass:JCBasicLayoutView.class],
       [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry更新约束" viewClass:JCUpdateConstraintsView.class],
@@ -70,7 +73,7 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+       NSLog(@"%@",self.blankTitleTest);
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:kMASCellIdentifier];
     

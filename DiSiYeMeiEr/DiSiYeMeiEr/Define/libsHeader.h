@@ -21,6 +21,7 @@
 #import <Masonry.h>
 #import "UIColor+JCColorCategory.h"
 #import "NSString+JCMethond.h"
+#import "WBViewControllerManager.h"
 
 
 #endif

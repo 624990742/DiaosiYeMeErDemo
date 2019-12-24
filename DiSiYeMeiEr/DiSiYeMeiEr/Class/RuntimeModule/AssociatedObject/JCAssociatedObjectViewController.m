@@ -94,9 +94,10 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
             break;
             
         case  5000000:
-            
+            [self testDemo5];
             break;
-            [self.navigationController pushViewController:[JCJumpModuleViewController new] animated:YES];
+            
+
         default:
             break;
     }
@@ -200,7 +201,7 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
     
 }
 
-//自定义方法交换
+//黑盒测试法
 - (void)testDemo4{
     Method testOriginalMethod = class_getInstanceMethod([NSString class], @selector(lowercaseString));
     Method testSwappedMethod = class_getInstanceMethod([NSString class], @selector(JC_customLowercaseString));
@@ -211,7 +212,13 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
 }
 
 
+#pragma mark - runtime万能跳转
+- (void)testDemo5{
 
+    
+    [self.navigationController pushViewController:[JCJumpModuleViewController new] animated:YES];
+
+}
 
 
 
