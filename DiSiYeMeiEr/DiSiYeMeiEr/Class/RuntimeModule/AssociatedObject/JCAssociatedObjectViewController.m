@@ -8,6 +8,7 @@
 
 #import "JCAssociatedObjectViewController.h"
 #import <objc/runtime.h>
+#import "JCJumpModuleViewController.h"
 static void *kAlertyViewKey = @"kAlertyViewKey";
 @interface JCAssociatedObjectViewController ()
 @property(nonatomic,assign)NSInteger testIndex;
@@ -95,7 +96,7 @@ static void *kAlertyViewKey = @"kAlertyViewKey";
         case  5000000:
             
             break;
-            
+            [self.navigationController pushViewController:[JCJumpModuleViewController new] animated:YES];
         default:
             break;
     }

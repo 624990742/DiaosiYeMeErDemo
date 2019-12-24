@@ -27,6 +27,7 @@
 		32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */; };
 		32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */; };
 		32F8E39423B0AD05009F9041 /* NSString+JCMethond.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39323B0AD05009F9041 /* NSString+JCMethond.m */; };
+		32F8E39823B0C1DC009F9041 /* JCJumpModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39723B0C1DC009F9041 /* JCJumpModuleViewController.m */; };
 		3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */; };
 		3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50AD81FC4817B0081CD33 /* AppDelegate.m */; };
 		3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB50ADB1FC4817B0081CD33 /* ViewController.m */; };
@@ -101,6 +102,8 @@
 		32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCColorCategory.m"; sourceTree = "<group>"; };
 		32F8E39223B0AD05009F9041 /* NSString+JCMethond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JCMethond.h"; sourceTree = "<group>"; };
 		32F8E39323B0AD05009F9041 /* NSString+JCMethond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCMethond.m"; sourceTree = "<group>"; };
+		32F8E39623B0C1DC009F9041 /* JCJumpModuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCJumpModuleViewController.h; sourceTree = "<group>"; };
+		32F8E39723B0C1DC009F9041 /* JCJumpModuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCJumpModuleViewController.m; sourceTree = "<group>"; };
 		3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFilterAbilityVC.h; sourceTree = "<group>"; };
 		3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFilterAbilityVC.m; sourceTree = "<group>"; };
 		3AB50AD41FC4817B0081CD33 /* DiSiYeMeiEr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiSiYeMeiEr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				32F8E39523B0C128009F9041 /* JumpModule */,
-				32F8E38E23B09269009F9041 /* Cateory */,
 				32C53A4B23977A5600E9EEEE /* SpeciesPattern */,
 				32392C4E2382F09300D440A2 /* RuntimeModule */,
 				329F7224235C3AC600D2644B /* MasonryLayoutModule */,
@@ -404,6 +406,8 @@
 		32F8E39523B0C128009F9041 /* JumpModule */ = {
 			isa = PBXGroup;
 			children = (
+				32F8E39623B0C1DC009F9041 /* JCJumpModuleViewController.h */,
+				32F8E39723B0C1DC009F9041 /* JCJumpModuleViewController.m */,
 			);
 			path = JumpModule;
 			sourceTree = "<group>";
@@ -446,6 +450,7 @@
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
 				329F7223235C3A9500D2644B /* Class */,
 				329F7221235C3A3D00D2644B /* Define */,
+				32F8E38E23B09269009F9041 /* Cateory */,
 				329F7220235C390400D2644B /* Other */,
 				3AB50AE01FC4817B0081CD33 /* Assets.xcassets */,
 				3ACA50051FCC6673006D5DAB /* images.xcassets */,
@@ -773,6 +778,7 @@
 				329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */,
 				329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */,
 				329F7234235C404000D2644B /* JCBasicLayoutView.m in Sources */,
+				32F8E39823B0C1DC009F9041 /* JCJumpModuleViewController.m in Sources */,
 				329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */,
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
