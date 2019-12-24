@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Demo集合";
-   
+    self.view.backgroundColor = [UIColor redColor];
    
 }
 
