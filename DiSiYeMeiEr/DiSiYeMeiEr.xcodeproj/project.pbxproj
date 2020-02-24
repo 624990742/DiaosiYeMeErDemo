@@ -23,6 +23,8 @@
 		329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7242235C631000D2644B /* JCUseingConstantsView.m */; };
 		329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7246235C694800D2644B /* JCCompositeEdgesView.m */; };
 		329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F724A235C6D0F00D2644B /* JCAspectFitView.m */; };
+		32A1AEEE240404F900109603 /* JCScreenshotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A1AEED240404F900109603 /* JCScreenshotsViewController.m */; };
+		32A1AEF22404053A00109603 /* JCShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A1AEF12404053A00109603 /* JCShowView.m */; };
 		32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */; };
 		32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */; };
 		32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */; };
@@ -95,6 +97,10 @@
 		329F7246235C694800D2644B /* JCCompositeEdgesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCompositeEdgesView.m; sourceTree = "<group>"; };
 		329F7249235C6D0F00D2644B /* JCAspectFitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAspectFitView.h; sourceTree = "<group>"; };
 		329F724A235C6D0F00D2644B /* JCAspectFitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAspectFitView.m; sourceTree = "<group>"; };
+		32A1AEEC240404F900109603 /* JCScreenshotsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCScreenshotsViewController.h; sourceTree = "<group>"; };
+		32A1AEED240404F900109603 /* JCScreenshotsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCScreenshotsViewController.m; sourceTree = "<group>"; };
+		32A1AEF02404053A00109603 /* JCShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCShowView.h; sourceTree = "<group>"; };
+		32A1AEF12404053A00109603 /* JCShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCShowView.m; sourceTree = "<group>"; };
 		32C53A4C23977A9300E9EEEE /* JCSpeciesPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternViewController.h; sourceTree = "<group>"; };
 		32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternViewController.m; sourceTree = "<group>"; };
 		32C53A5023977B7B00E9EEEE /* JCSpeciesPatternObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternObject.h; sourceTree = "<group>"; };
@@ -201,8 +207,8 @@
 		32312ADD23B1E0DF00381E23 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */,
 				32312ADF23B1E0DF00381E23 /* WBViewControllerManager.h */,
+				32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32A1AEEB240404C300109603 /* Screenshots */,
 				32312ADD23B1E0DF00381E23 /* Library */,
 				32F8E39523B0C128009F9041 /* JumpModule */,
 				32C53A4B23977A5600E9EEEE /* SpeciesPattern */,
@@ -369,6 +376,25 @@
 				329F724A235C6D0F00D2644B /* JCAspectFitView.m */,
 			);
 			path = aspectFitView;
+			sourceTree = "<group>";
+		};
+		32A1AEEB240404C300109603 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				32A1AEEF2404052900109603 /* View */,
+				32A1AEEC240404F900109603 /* JCScreenshotsViewController.h */,
+				32A1AEED240404F900109603 /* JCScreenshotsViewController.m */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		32A1AEEF2404052900109603 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32A1AEF02404053A00109603 /* JCShowView.h */,
+				32A1AEF12404053A00109603 /* JCShowView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		32C53A4B23977A5600E9EEEE /* SpeciesPattern */ = {
@@ -785,6 +811,8 @@
 				321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */,
 				32312AE023B1E0DF00381E23 /* WBViewControllerManager.m in Sources */,
 				32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */,
+				32A1AEF22404053A00109603 /* JCShowView.m in Sources */,
+				32A1AEEE240404F900109603 /* JCScreenshotsViewController.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
 				320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */,
@@ -967,14 +995,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3DPJ4DW7A;
+				DEVELOPMENT_TEAM = M2TQ22753C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PROJECT_DIR}/Masonry\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/jiachen/Desktop/project/DiaosiYeMeErDemo/DiSiYeMeiEr/DiSiYeMeiEr/Other/disiYeMeiPch.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/DiSiYeMeiEr/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JiaChen-MacBook-Pro";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teste.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_SYMBOL_EDIT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -985,14 +1030,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E3DPJ4DW7A;
+				DEVELOPMENT_TEAM = M2TQ22753C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PROJECT_DIR}/Masonry\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/jiachen/Desktop/project/DiaosiYeMeErDemo/DiSiYeMeiEr/DiSiYeMeiEr/Other/disiYeMeiPch.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/DiSiYeMeiEr/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JiaChen-MacBook-Pro";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teste.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_SYMBOL_EDIT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

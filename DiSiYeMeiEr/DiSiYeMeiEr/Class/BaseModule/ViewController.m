@@ -12,6 +12,7 @@
 #import "JCMasExampleListViewController.h"
 #import "JCAssociatedObjectViewController.h"
 #import "JCSpeciesPatternViewController.h"
+#import "JCScreenshotsViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -20,7 +21,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"多线程"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片"];
     }
     return _dataScource;
 }
@@ -31,11 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Demo集合";
-    self.view.backgroundColor = [UIColor redColor];
-   
-
-    
-    
+ 
     
 }
 
@@ -56,7 +53,6 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     cell.textLabel.text = self.dataScource[indexPath.row];
-    cell.backgroundColor = [UIColor orangeColor];
   return cell;
 }
 
@@ -79,6 +75,11 @@
         {
             [self.navigationController pushViewController:[JCSpeciesPatternViewController new] animated:YES];
                   
+        }
+        case 3:
+        {
+            [self.navigationController pushViewController:[JCScreenshotsViewController new] animated:YES];
+            
         }
         default:
             break;
