@@ -12,6 +12,9 @@
 		320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D4239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m */; };
 		320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */; };
 		321DD85622662D4D00A7DC2B /* JCStreamUsageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */; };
+		321F2942240B55DC002B001D /* NSString+JCCustomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F2941240B55DC002B001D /* NSString+JCCustomString.m */; };
+		321F2945240B56A8002B001D /* UITextField+JCTextFieldCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F2944240B56A8002B001D /* UITextField+JCTextFieldCategory.m */; };
+		321F2948240B5737002B001D /* JCLimitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F2947240B5737002B001D /* JCLimitManager.m */; };
 		32312AE023B1E0DF00381E23 /* WBViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */; };
 		32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
@@ -73,6 +76,12 @@
 		320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesEmployeeTypeFinace.m; sourceTree = "<group>"; };
 		321DD85422662D4D00A7DC2B /* JCStreamUsageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCStreamUsageVC.h; sourceTree = "<group>"; };
 		321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCStreamUsageVC.m; sourceTree = "<group>"; };
+		321F2940240B55DC002B001D /* NSString+JCCustomString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JCCustomString.h"; sourceTree = "<group>"; };
+		321F2941240B55DC002B001D /* NSString+JCCustomString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCCustomString.m"; sourceTree = "<group>"; };
+		321F2943240B56A8002B001D /* UITextField+JCTextFieldCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JCTextFieldCategory.h"; sourceTree = "<group>"; };
+		321F2944240B56A8002B001D /* UITextField+JCTextFieldCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JCTextFieldCategory.m"; sourceTree = "<group>"; };
+		321F2946240B5737002B001D /* JCLimitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCLimitManager.h; sourceTree = "<group>"; };
+		321F2947240B5737002B001D /* JCLimitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCLimitManager.m; sourceTree = "<group>"; };
 		32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewControllerManager.m; sourceTree = "<group>"; };
 		32312ADF23B1E0DF00381E23 /* WBViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewControllerManager.h; sourceTree = "<group>"; };
 		32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAssociatedObjectViewController.h; sourceTree = "<group>"; };
@@ -202,6 +211,19 @@
 				321DD85522662D4D00A7DC2B /* JCStreamUsageVC.m */,
 			);
 			path = StreamUsageVC;
+			sourceTree = "<group>";
+		};
+		321F293F240B55AB002B001D /* category */ = {
+			isa = PBXGroup;
+			children = (
+				321F2940240B55DC002B001D /* NSString+JCCustomString.h */,
+				321F2941240B55DC002B001D /* NSString+JCCustomString.m */,
+				321F2943240B56A8002B001D /* UITextField+JCTextFieldCategory.h */,
+				321F2944240B56A8002B001D /* UITextField+JCTextFieldCategory.m */,
+				321F2946240B5737002B001D /* JCLimitManager.h */,
+				321F2947240B5737002B001D /* JCLimitManager.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		32312ADD23B1E0DF00381E23 /* Library */ = {
@@ -454,6 +476,7 @@
 		3AA4CEB51FC71A3A0071A499 /* TextFilterAbilityVC */ = {
 			isa = PBXGroup;
 			children = (
+				321F293F240B55AB002B001D /* category */,
 				3AA4CEB61FC722860071A499 /* TextFilterAbilityVC.h */,
 				3AA4CEB71FC722860071A499 /* TextFilterAbilityVC.m */,
 			);
@@ -820,6 +843,8 @@
 				329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */,
 				329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */,
 				329F7234235C404000D2644B /* JCBasicLayoutView.m in Sources */,
+				321F2948240B5737002B001D /* JCLimitManager.m in Sources */,
+				321F2942240B55DC002B001D /* NSString+JCCustomString.m in Sources */,
 				32F8E39823B0C1DC009F9041 /* JCJumpModuleViewController.m in Sources */,
 				329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */,
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
@@ -827,6 +852,7 @@
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,
 				32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */,
 				32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */,
+				321F2945240B56A8002B001D /* UITextField+JCTextFieldCategory.m in Sources */,
 				32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,
