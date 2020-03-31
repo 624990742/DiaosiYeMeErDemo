@@ -17,6 +17,7 @@
 		321F2948240B5737002B001D /* JCLimitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F2947240B5737002B001D /* JCLimitManager.m */; };
 		32312AE023B1E0DF00381E23 /* WBViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32312ADE23B1E0DF00381E23 /* WBViewControllerManager.m */; };
 		32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */; };
+		323B16E3240FA14800A863E0 /* JCtestVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B16E2240FA14800A863E0 /* JCtestVCViewController.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
 		329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722C235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m */; };
 		329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722F235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m */; };
@@ -86,6 +87,8 @@
 		32312ADF23B1E0DF00381E23 /* WBViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewControllerManager.h; sourceTree = "<group>"; };
 		32392C502382F0C900D440A2 /* JCAssociatedObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAssociatedObjectViewController.h; sourceTree = "<group>"; };
 		32392C512382F0C900D440A2 /* JCAssociatedObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAssociatedObjectViewController.m; sourceTree = "<group>"; };
+		323B16E1240FA14800A863E0 /* JCtestVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCtestVCViewController.h; sourceTree = "<group>"; };
+		323B16E2240FA14800A863E0 /* JCtestVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCtestVCViewController.m; sourceTree = "<group>"; };
 		329F721F235C38FD00D2644B /* disiYeMeiPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disiYeMeiPch.pch; sourceTree = "<group>"; };
 		329F7222235C3A5200D2644B /* libsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libsHeader.h; sourceTree = "<group>"; };
 		329F7228235C3B5600D2644B /* JCMasExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMasExampleListViewController.h; sourceTree = "<group>"; };
@@ -252,6 +255,15 @@
 			path = AssociatedObject;
 			sourceTree = "<group>";
 		};
+		323B16E0240FA13600A863E0 /* testVC */ = {
+			isa = PBXGroup;
+			children = (
+				323B16E1240FA14800A863E0 /* JCtestVCViewController.h */,
+				323B16E2240FA14800A863E0 /* JCtestVCViewController.m */,
+			);
+			path = testVC;
+			sourceTree = "<group>";
+		};
 		329F7220235C390400D2644B /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +286,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				323B16E0240FA13600A863E0 /* testVC */,
 				32A1AEEB240404C300109603 /* Screenshots */,
 				32312ADD23B1E0DF00381E23 /* Library */,
 				32F8E39523B0C128009F9041 /* JumpModule */,
@@ -836,6 +849,7 @@
 				32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */,
 				32A1AEF22404053A00109603 /* JCShowView.m in Sources */,
 				32A1AEEE240404F900109603 /* JCScreenshotsViewController.m in Sources */,
+				323B16E3240FA14800A863E0 /* JCtestVCViewController.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
 				320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */,

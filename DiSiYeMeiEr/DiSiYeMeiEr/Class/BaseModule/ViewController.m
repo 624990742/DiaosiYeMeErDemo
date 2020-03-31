@@ -14,6 +14,7 @@
 #import "JCSpeciesPatternViewController.h"
 #import "JCScreenshotsViewController.h"
 #import "TextFilterAbilityVC.h"
+#import "JCtestVCViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -22,7 +23,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@" 测试"];
     }
     return _dataScource;
 }
@@ -88,6 +89,11 @@
              [self.navigationController pushViewController:[TextFilterAbilityVC new] animated:YES];
         }
             
+        case 5:
+        {
+            [self.navigationController pushViewController:[JCtestVCViewController new] animated:YES];
+        }
+        
         default:
             break;
     }
