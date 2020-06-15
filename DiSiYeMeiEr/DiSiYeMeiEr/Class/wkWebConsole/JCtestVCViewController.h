@@ -2,15 +2,15 @@
 //  JCtestVCViewController.h
 //  DiSiYeMeiEr
 //
-//  Created by jiachen on 2020/3/4.
+//  Created by jiachen on 2020/6/15.
 //  Copyright © 2020 JCTrustYourself. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JCtestVCViewController : ViewController
+@interface JCtestVCViewController : UIViewController
 
 @end
 
