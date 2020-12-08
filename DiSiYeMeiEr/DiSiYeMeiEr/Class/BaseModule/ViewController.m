@@ -16,6 +16,7 @@
 #import "TextFilterAbilityVC.h"
 #import "JCtestVCViewController.h"
 #import "HBTextChangeVC.h"
+#import "JCRuntimeMessageForwardingVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
@@ -25,7 +26,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应",@"消息转发案例"];
     }
     return _dataScource;
 }
@@ -106,6 +107,13 @@
             
             
             break;
+        }
+        case 7:
+       {
+       
+         [self.navigationController pushViewController:[JCRuntimeMessageForwardingVC new]
+            animated:YES];
+           break;
         }
         default:
             break;

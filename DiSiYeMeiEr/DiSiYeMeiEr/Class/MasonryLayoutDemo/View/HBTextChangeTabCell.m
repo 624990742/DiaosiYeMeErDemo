@@ -4,8 +4,7 @@
 //
 //  Created by Mac on 2020/10/11.
 //  Copyright © 2020 yanruyu. All rights reserved.
-//
-
+//原来demo的地址：https://github.com/smileKH/HBTextShowAndPackUp
 #import "HBTextChangeTabCell.h"
 #import "NSString+LeeLabelAddtion.h"
 #import <Masonry.h>

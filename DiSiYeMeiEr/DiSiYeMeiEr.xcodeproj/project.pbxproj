@@ -124,6 +124,10 @@
 		32A1AEF22404053A00109603 /* JCShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A1AEF12404053A00109603 /* JCShowView.m */; };
 		32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */; };
 		32C53A5223977B7B00E9EEEE /* JCSpeciesPatternObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */; };
+		32D80E75257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D80E74257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.m */; };
+		32D80E78257FA8490054C3AE /* TestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D80E77257FA8480054C3AE /* TestMessage.m */; };
+		32D80E7B257FA8530054C3AE /* BackupTestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D80E7A257FA8530054C3AE /* BackupTestMessage.m */; };
+		32D80E7E257FA85E0054C3AE /* LMRuntimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D80E7C257FA85E0054C3AE /* LMRuntimeTool.m */; };
 		32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */; };
 		32F8E39123B092C9009F9041 /* UIColor+JCColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39023B092C9009F9041 /* UIColor+JCColorCategory.m */; };
 		32F8E39423B0AD05009F9041 /* NSString+JCMethond.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F8E39323B0AD05009F9041 /* NSString+JCMethond.m */; };
@@ -394,6 +398,14 @@
 		32C53A4D23977A9300E9EEEE /* JCSpeciesPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternViewController.m; sourceTree = "<group>"; };
 		32C53A5023977B7B00E9EEEE /* JCSpeciesPatternObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpeciesPatternObject.h; sourceTree = "<group>"; };
 		32C53A5123977B7B00E9EEEE /* JCSpeciesPatternObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpeciesPatternObject.m; sourceTree = "<group>"; };
+		32D80E73257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRuntimeMessageForwardingVC.h; sourceTree = "<group>"; };
+		32D80E74257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRuntimeMessageForwardingVC.m; sourceTree = "<group>"; };
+		32D80E76257FA8480054C3AE /* TestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMessage.h; sourceTree = "<group>"; };
+		32D80E77257FA8480054C3AE /* TestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMessage.m; sourceTree = "<group>"; };
+		32D80E79257FA8530054C3AE /* BackupTestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackupTestMessage.h; sourceTree = "<group>"; };
+		32D80E7A257FA8530054C3AE /* BackupTestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackupTestMessage.m; sourceTree = "<group>"; };
+		32D80E7C257FA85E0054C3AE /* LMRuntimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRuntimeTool.m; sourceTree = "<group>"; };
+		32D80E7D257FA85E0054C3AE /* LMRuntimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRuntimeTool.h; sourceTree = "<group>"; };
 		32F8E38B23B09065009F9041 /* JCMoreViewOrButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMoreViewOrButton.h; sourceTree = "<group>"; };
 		32F8E38C23B09065009F9041 /* JCMoreViewOrButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMoreViewOrButton.m; sourceTree = "<group>"; };
 		32F8E38F23B092C9009F9041 /* UIColor+JCColorCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCColorCategory.h"; sourceTree = "<group>"; };
@@ -915,6 +927,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */,
 				3276894325501E6E0082A256 /* MasonryLayoutDemo */,
 				32CB001424EF703C0050DE95 /* curveImageModule */,
 				32419F54249711530019B54D /* wkWebConsole */,
@@ -1093,6 +1106,21 @@
 			children = (
 			);
 			path = curveImageModule;
+			sourceTree = "<group>";
+		};
+		32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				32D80E7D257FA85E0054C3AE /* LMRuntimeTool.h */,
+				32D80E7C257FA85E0054C3AE /* LMRuntimeTool.m */,
+				32D80E79257FA8530054C3AE /* BackupTestMessage.h */,
+				32D80E7A257FA8530054C3AE /* BackupTestMessage.m */,
+				32D80E76257FA8480054C3AE /* TestMessage.h */,
+				32D80E77257FA8480054C3AE /* TestMessage.m */,
+				32D80E73257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.h */,
+				32D80E74257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.m */,
+			);
+			path = RuntimeMessageForwarding;
 			sourceTree = "<group>";
 		};
 		32F8E38A23B0904B009F9041 /* moreViewOrButton */ = {
@@ -1535,6 +1563,7 @@
 				32768A9E25502BDE0082A256 /* NSData+YYAdd.m in Sources */,
 				32768A6525502BDD0082A256 /* YYDiskCache.m in Sources */,
 				32768A7C25502BDD0082A256 /* YYTextInput.m in Sources */,
+				32D80E75257FA7F40054C3AE /* JCRuntimeMessageForwardingVC.m in Sources */,
 				32768A7525502BDD0082A256 /* YYWebImageOperation.m in Sources */,
 				32768A8225502BDD0082A256 /* YYLabel.m in Sources */,
 				32419F5C2497118A0019B54D /* SKWebView.m in Sources */,
@@ -1557,6 +1586,7 @@
 				32768A9025502BDE0082A256 /* UIApplication+YYAdd.m in Sources */,
 				32768AA525502BDE0082A256 /* NSNotificationCenter+YYAdd.m in Sources */,
 				32768AA325502BDE0082A256 /* NSDate+YYAdd.m in Sources */,
+				32D80E7E257FA85E0054C3AE /* LMRuntimeTool.m in Sources */,
 				329F724B235C6D0F00D2644B /* JCAspectFitView.m in Sources */,
 				32768AB125502BDE0082A256 /* YYGestureRecognizer.m in Sources */,
 				32419F60249711CD0019B54D /* JCtestVCViewController.m in Sources */,
@@ -1567,6 +1597,7 @@
 				321F2948240B5737002B001D /* JCLimitManager.m in Sources */,
 				321F2942240B55DC002B001D /* NSString+JCCustomString.m in Sources */,
 				32F8E39823B0C1DC009F9041 /* JCJumpModuleViewController.m in Sources */,
+				32D80E78257FA8490054C3AE /* TestMessage.m in Sources */,
 				3276899F2550204E0082A256 /* NSString+LeeLabelAddtion.m in Sources */,
 				329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */,
 				32768A8625502BDE0082A256 /* YYTextParser.m in Sources */,
@@ -1589,6 +1620,7 @@
 				32768A8B25502BDE0082A256 /* YYTextRubyAnnotation.m in Sources */,
 				32768AA925502BDE0082A256 /* CALayer+YYAdd.m in Sources */,
 				32C53A4E23977A9300E9EEEE /* JCSpeciesPatternViewController.m in Sources */,
+				32D80E7B257FA8530054C3AE /* BackupTestMessage.m in Sources */,
 				32768A9D25502BDE0082A256 /* NSObject+YYAdd.m in Sources */,
 				32768A6F25502BDD0082A256 /* _YYWebImageSetter.m in Sources */,
 				32768A8D25502BDE0082A256 /* UIBezierPath+YYAdd.m in Sources */,
