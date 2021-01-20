@@ -6,7 +6,7 @@ target 'DiSiYeMeiEr' do
   use_frameworks!
 
 
-  pod 'MJRefresh'
+  pod 'MJRefresh', '~> 3.5.0'
   pod 'Masonry', '~> 1.1.0'
   target 'DiSiYeMeiErTests' do
     inherit! :search_paths
