@@ -14,6 +14,11 @@
 #import "JCSpeciesPatternViewController.h"
 #import "JCScreenshotsViewController.h"
 #import "TextFilterAbilityVC.h"
+#import "JCtestVCViewController.h"
+#import "HBTextChangeVC.h"
+#import "JCRuntimeMessageForwardingVC.h"
+#import "JCAlgorithmViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -22,7 +27,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应",@"消息转发案例",@"算法案例"];
     }
     return _dataScource;
 }
@@ -32,7 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"Demo集合";
+    self.navigationItem.title = @"开发常用总结";
  
     
 }
@@ -75,18 +80,50 @@
         case 2:
         {
             [self.navigationController pushViewController:[JCSpeciesPatternViewController new] animated:YES];
-                  
+            break;
         }
         case 3:
         {
             [self.navigationController pushViewController:[JCScreenshotsViewController new] animated:YES];
-            
+            break;
         }
         
         case 4:
         {
              [self.navigationController pushViewController:[TextFilterAbilityVC new] animated:YES];
+            break;
         }
+            
+        case 5:
+        {
+            [self.navigationController pushViewController:[JCtestVCViewController new] animated:YES];
+            
+            break;
+        }
+        
+        case 6:
+        {
+            [self.navigationController pushViewController:[HBTextChangeVC new]
+             animated:YES];
+            
+            
+            break;
+        }
+        case 7:
+       {
+       
+         [self.navigationController pushViewController:[JCRuntimeMessageForwardingVC new]
+            animated:YES];
+           break;
+        }
+            
+            case 8:
+                 {
+              [self.navigationController pushViewController:[JCAlgorithmViewController new]
+                      animated:YES];
+                     break;
+                  }
+            
             
         default:
             break;
