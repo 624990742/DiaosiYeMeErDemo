@@ -17,6 +17,7 @@
 #import "JCtestVCViewController.h"
 #import "HBTextChangeVC.h"
 #import "JCRuntimeMessageForwardingVC.h"
+#import "JCAlgorithmViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
@@ -26,7 +27,7 @@
 @implementation ViewController
 - (NSArray *)dataScource{
     if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应",@"消息转发案例"];
+        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应",@"消息转发案例",@"算法案例"];
     }
     return _dataScource;
 }
@@ -115,6 +116,15 @@
             animated:YES];
            break;
         }
+            
+            case 8:
+                 {
+              [self.navigationController pushViewController:[JCAlgorithmViewController new]
+                      animated:YES];
+                     break;
+                  }
+            
+            
         default:
             break;
     }

@@ -31,4 +31,26 @@
 }
 
 
+
+
++(void)load{
+    //获取test方法
+    Method test = class_getInstanceMethod(self, @selector(test));
+    //获取otherTest方法
+    Method otherTest = class_getInstanceMethod(self, @selector(otherTest));
+    //交换两个方法
+    method_exchangeImplementations(test, otherTest);
+}
+
+- (void)test{
+    NSLog(@"test");
+}
+
+- (void)otherTest{
+    //实际上调用的test的具体实现
+    [self otherTest];
+    NSLog(@"test");
+}
+
+
 @end

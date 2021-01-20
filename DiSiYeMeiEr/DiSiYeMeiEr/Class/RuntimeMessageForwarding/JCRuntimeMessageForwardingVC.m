@@ -10,15 +10,18 @@
 #import "TestMessage.h"
 #import <objc/runtime.h>
 @interface JCRuntimeMessageForwardingVC ()
-
+@property(nonatomic,strong)TestMessage *test;
 @end
 
 @implementation JCRuntimeMessageForwardingVC
+/**
+这个demo是说明消息转发的原理的。
 
+*/
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.view.backgroundColor = [UIColor whiteColor];
      
      /******类方法调用******/
      [[TestMessage class] performSelector:@selector(testClassFunction)];

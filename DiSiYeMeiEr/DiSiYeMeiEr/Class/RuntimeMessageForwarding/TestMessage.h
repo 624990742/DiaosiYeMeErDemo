@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface TestMessage : NSObject
-
+- (void)test;
+- (void)otherTest;
 @end
