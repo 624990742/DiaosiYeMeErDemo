@@ -16,9 +16,74 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"算法";
-    [self gCDTestDemo];
+    self.navigationItem.title = @"测试一些面试题";
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    [self testBlockDemo3];
 }
+
+
+#pragma mark -  Block相关的
+/**
+ 下面的案例仅仅是使用，并不是赋值操作，所以不需要
+ 使用__block进行修饰。
+ */
+- (void)testBlockDemo{
+    
+    {
+        NSMutableArray *array = [NSMutableArray array];
+        void(^Block)(void) = ^{
+            [array addObject:@123];
+            NSLog(@"array==>%@",array);
+        };
+        Block();
+    }
+}
+
+/**
+报错:
+ Variable is not assignable (missing __block type specifier)
+ 变量不可赋值（缺少块类型说明符）
+ 因为是赋值操作需要进行__block 修饰
+ */
+- (void)testBlockDemo1{
+    
+    {
+      __block  NSMutableArray *array = nil;
+        void(^Block)(void) = ^{
+            array = [NSMutableArray array];
+        };
+        Block();
+    }
+}
+- (void)testBlockDemo2{
+    
+    {
+        __block  int multiplier = 6;
+        int(^Block)(int) = ^int(int num){
+            return num * multiplier;
+        };
+        multiplier = 4;
+        NSLog(@"result is %d",Block(2));
+    }
+}
+
+- (void)testBlockDemo3{
+  
+}
+
+
+//+ (void)initialize{
+//    [super initialize];
+//    NSLog(@"initialize");
+//}
+//+(void)load{
+//    [super load];
+//    NSLog(@"load");
+//}
+
+
+
 
 
 #pragma mark - 多线程面试题
@@ -37,11 +102,11 @@
 //        [self doSomething];
 //    });
     
-    dispatch_queue_t seriaQuel;
-    
-    dispatch_sync(seriaQuel, ^{
-        
-    });
+//    dispatch_queue_t seriaQuel;
+//
+//    dispatch_sync(seriaQuel, ^{
+//
+//    });
     
     
 }

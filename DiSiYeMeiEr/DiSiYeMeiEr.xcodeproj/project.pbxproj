@@ -112,6 +112,8 @@
 		32768AC525502DAE0082A256 /* HBTextChangeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768ABB25502DAE0082A256 /* HBTextChangeTabCell.m */; };
 		32768AC625502DAE0082A256 /* HBTextChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768ABF25502DAE0082A256 /* HBTextChangeModel.m */; };
 		32768AC725502DAE0082A256 /* HBTextChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768AC325502DAE0082A256 /* HBTextChangeVC.m */; };
+		327A7B2825B94EAD0021B234 /* JWeakAndStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A7B2725B94EAD0021B234 /* JWeakAndStrongViewController.m */; };
+		327A7B2B25B94F730021B234 /* JCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A7B2A25B94F730021B234 /* JCTestObject.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
 		329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722C235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m */; };
 		329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722F235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m */; };
@@ -373,6 +375,10 @@
 		32768AC025502DAE0082A256 /* HBTextChangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTextChangeModel.h; sourceTree = "<group>"; };
 		32768AC225502DAE0082A256 /* HBTextChangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTextChangeVC.h; sourceTree = "<group>"; };
 		32768AC325502DAE0082A256 /* HBTextChangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTextChangeVC.m; sourceTree = "<group>"; };
+		327A7B2625B94EAD0021B234 /* JWeakAndStrongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWeakAndStrongViewController.h; sourceTree = "<group>"; };
+		327A7B2725B94EAD0021B234 /* JWeakAndStrongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWeakAndStrongViewController.m; sourceTree = "<group>"; };
+		327A7B2925B94F730021B234 /* JCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTestObject.h; sourceTree = "<group>"; };
+		327A7B2A25B94F730021B234 /* JCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestObject.m; sourceTree = "<group>"; };
 		329F721F235C38FD00D2644B /* disiYeMeiPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disiYeMeiPch.pch; sourceTree = "<group>"; };
 		329F7222235C3A5200D2644B /* libsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libsHeader.h; sourceTree = "<group>"; };
 		329F7228235C3B5600D2644B /* JCMasExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMasExampleListViewController.h; sourceTree = "<group>"; };
@@ -952,6 +958,10 @@
 				329F7224235C3AC600D2644B /* MasonryLayoutModule */,
 				32059B3E235C387A00407C04 /* BaseModule */,
 				32059B3D235C384C00407C04 /* OtherModule */,
+				327A7B2625B94EAD0021B234 /* JWeakAndStrongViewController.h */,
+				327A7B2725B94EAD0021B234 /* JWeakAndStrongViewController.m */,
+				327A7B2925B94F730021B234 /* JCTestObject.h */,
+				327A7B2A25B94F730021B234 /* JCTestObject.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -1610,10 +1620,12 @@
 				321F2948240B5737002B001D /* JCLimitManager.m in Sources */,
 				321F2942240B55DC002B001D /* NSString+JCCustomString.m in Sources */,
 				32F8E39823B0C1DC009F9041 /* JCJumpModuleViewController.m in Sources */,
+				327A7B2B25B94F730021B234 /* JCTestObject.m in Sources */,
 				32D80E78257FA8490054C3AE /* TestMessage.m in Sources */,
 				3276899F2550204E0082A256 /* NSString+LeeLabelAddtion.m in Sources */,
 				329F7243235C631000D2644B /* JCUseingConstantsView.m in Sources */,
 				32768A8625502BDE0082A256 /* YYTextParser.m in Sources */,
+				327A7B2825B94EAD0021B234 /* JWeakAndStrongViewController.m in Sources */,
 				32768A8725502BDE0082A256 /* NSAttributedString+YYText.m in Sources */,
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
