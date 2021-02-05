@@ -143,10 +143,92 @@ void(^block)(void);
  在Block内部修饰的对象，会保证，在使用这个对象在作用域内，这个对象
  都不会被释放，出了作用域，引用计数会-1，且__strong主要是用在多线程
  运用中，如果只用单线程，只需要使用__weak即可。
- 
- 
+ */
+
+
+
+
+
+#pragma mark -  Block相关的
+/**
+ 下面的案例仅仅是使用，并不是赋值操作，所以不需要
+ 使用__block进行修饰。
+ */
+- (void)testBlockDemo{
+    
+    {
+        NSMutableArray *array = [NSMutableArray array];
+        void(^Block)(void) = ^{
+            [array addObject:@123];
+            NSLog(@"array==>%@",array);
+        };
+        Block();
+    }
+}
+
+/**
+报错:
+ Variable is not assignable (missing __block type specifier)
+ 变量不可赋值（缺少块类型说明符）
+ 因为是赋值操作需要进行__block 修饰
+ */
+- (void)testBlockDemo1{
+    
+    {
+      __block  NSMutableArray *array = nil;
+        void(^Block)(void) = ^{
+            array = [NSMutableArray array];
+        };
+        Block();
+    }
+}
+- (void)testBlockDemo2{
+    
+    {
+        __block  int multiplier = 6;
+        int(^Block)(int) = ^int(int num){
+            return num * multiplier;
+        };
+        multiplier = 4;
+        NSLog(@"result is %d",Block(2));
+    }
+}
+
+- (void)testBlockDemo3{
+  
+}
+
+
+
+
+#pragma mark - 多线程面试题
+
+/**
+ 1、同步串行的问题。
+ 下面的方法会造成死锁
+ 死锁：队列引起的循环等待。
+ 首先提交了viewDidLoad任务，随后有提交了一个Block任务。
+  因为当前的任务是分配在主线程同步进行的，两个任务都在主队列上，队列的特点是”先进先出，后进后出“，所以viewDidLoad方法结束依赖于block的任务完成，block又依赖于viewDidLoad的任务完成。他们两个会出现相互等待的情况
  
  */
+- (void)gCDTestDemo{
+//
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        [self doSomething];
+//    });
+    
+//    dispatch_queue_t seriaQuel;
+//
+//    dispatch_sync(seriaQuel, ^{
+//
+//    });
+    
+    
+}
+
+- (void)doSomething{
+    NSLog(@"doSomething");
+}
 
 
 

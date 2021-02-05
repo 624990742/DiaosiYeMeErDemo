@@ -16,128 +16,67 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"测试一些面试题";
+    self.navigationItem.title = @"算法列表";
     self.view.backgroundColor = [UIColor whiteColor];
-
-    [self testBlockDemo3];
+    [self bubbleSortMethod];
 }
-
-
-#pragma mark -  Block相关的
-/**
- 下面的案例仅仅是使用，并不是赋值操作，所以不需要
- 使用__block进行修饰。
- */
-- (void)testBlockDemo{
+#pragma mark - 选择排序
+- (void)selectSortMethod{
     
-    {
-        NSMutableArray *array = [NSMutableArray array];
-        void(^Block)(void) = ^{
-            [array addObject:@123];
-            NSLog(@"array==>%@",array);
-        };
-        Block();
-    }
-}
+    NSArray *arr = @[@10,@6,@8,@9,@12,@11];
+//    NSInteger objNum = arr.count;
+//    int k;
+//    for (int i = 0; i < objNum; i++) {
+//        k = i;
+//        for (int j = i + 1; j < objNum; j++) {
+//            int tempK = [arr[k] intValue];
+//            int tempJ = [arr[j] intValue];
+//            if (tempK > tempJ) {
+//                tempK = tempJ;
+//            }
+//        }
+//        if (k != i) {
+//            int temp = [arr[k] intValue];
+//            arr[k] = arr[i];
+//            arr[i] = temp;
+//        }
+//    }
 
-/**
-报错:
- Variable is not assignable (missing __block type specifier)
- 变量不可赋值（缺少块类型说明符）
- 因为是赋值操作需要进行__block 修饰
- */
-- (void)testBlockDemo1{
-    
-    {
-      __block  NSMutableArray *array = nil;
-        void(^Block)(void) = ^{
-            array = [NSMutableArray array];
-        };
-        Block();
-    }
-}
-- (void)testBlockDemo2{
-    
-    {
-        __block  int multiplier = 6;
-        int(^Block)(int) = ^int(int num){
-            return num * multiplier;
-        };
-        multiplier = 4;
-        NSLog(@"result is %d",Block(2));
-    }
-}
-
-- (void)testBlockDemo3{
-  
-}
-
-
-//+ (void)initialize{
-//    [super initialize];
-//    NSLog(@"initialize");
-//}
-//+(void)load{
-//    [super load];
-//    NSLog(@"load");
-//}
-
-
-
-
-
-#pragma mark - 多线程面试题
-
-/**
- 1、同步串行的问题。
- 下面的方法会造成死锁
- 死锁：队列引起的循环等待。
- 首先提交了viewDidLoad任务，随后有提交了一个Block任务。
-  因为当前的任务是分配在主线程同步进行的，两个任务都在主队列上，队列的特点是”先进先出，后进后出“，所以viewDidLoad方法结束依赖于block的任务完成，block又依赖于viewDidLoad的任务完成。他们两个会出现相互等待的情况
- 
- */
-- (void)gCDTestDemo{
-//
-//    dispatch_sync(dispatch_get_main_queue(), ^{
-//        [self doSomething];
-//    });
-    
-//    dispatch_queue_t seriaQuel;
-//
-//    dispatch_sync(seriaQuel, ^{
-//
-//    });
-    
     
 }
 
-- (void)doSomething{
-    NSLog(@"doSomething");
-}
-
-
-
-#pragma mark - 算法
-
-- (void)dea{
-    NSMutableArray * arr = @[@16,@1,@2,@9,@7,@12,@5,@3,@8,@13,@10].mutableCopy;
-      [self bubbleSortWithArray:arr];
-}
-
-#pragma mark - 冒泡算法
-- (void)bubbleSortWithArray:(NSMutableArray *)array {
-    for (int i = 0; i < array.count - 1; i++) {
-         //外层for循环控制循环次数
-        for (int j = 0; j < array.count - 1 - i; j++) {
-            //内层for循环控制交换次数
-            if ([array[j] integerValue] > [array[j + 1] integerValue]) {
+#pragma mark - 冒泡排序
+- (void)bubbleSortMethod{
+    
+    int iCount  = 0;
+    int jCount  = 0;
+     NSMutableArray *array = [NSMutableArray arrayWithArray:@[@10,@1,@2,@9,@7,@19,@5,@3,@8,@13,@17]];
+    NSInteger arrCount = array.count - 1;
+    for (int i = 0; i < arrCount; i++) {//外层for循环控制循环次数
+           iCount++;
+        for (int j = 0; j < arrCount - i; j++) { //内层for循环控制交换次数
+            jCount++;
+            if ([array[j] intValue] > [array[j + 1] intValue]) {
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
             }
+            [self logArr:array];
         }
     }
-    NSLog(@"%@",array);
+    
+    NSLog(@"循环次数：%d",jCount);
+    NSLog(@"共%d次比较",iCount);
+   
 }
 
+//打印数组
+- (void)logArr:(NSMutableArray * )array {
+    NSString * str = @"";
+    for (NSNumber * value in array) {
+       str = [str stringByAppendingString:[NSString stringWithFormat:@"%zd ",[value integerValue]]];
+    }
+    NSLog(@"%@",str);
+    NSLog(@"<=============>");
+}
 
 
 /*

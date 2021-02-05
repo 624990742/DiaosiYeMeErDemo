@@ -21,6 +21,7 @@
 		32419F5B2497118A0019B54D /* WKWebViewConfiguration+Console.m in Sources */ = {isa = PBXBuildFile; fileRef = 32419F582497118A0019B54D /* WKWebViewConfiguration+Console.m */; };
 		32419F5C2497118A0019B54D /* SKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32419F592497118A0019B54D /* SKWebView.m */; };
 		32419F60249711CD0019B54D /* JCtestVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32419F5F249711CD0019B54D /* JCtestVCViewController.m */; };
+		3247C49A25B9A0A9005AABB7 /* JCGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3247C49925B9A0A9005AABB7 /* JCGCDViewController.m */; };
 		324A11CF2582428A000E0B00 /* JCAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A11CE2582428A000E0B00 /* JCAlgorithmViewController.m */; };
 		3276899B255020350082A256 /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768997255020350082A256 /* UITableView+HYBCacheHeight.m */; };
 		3276899C255020350082A256 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3276899A255020350082A256 /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
@@ -194,6 +195,8 @@
 		32419F592497118A0019B54D /* SKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKWebView.m; sourceTree = "<group>"; };
 		32419F5E249711CD0019B54D /* JCtestVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCtestVCViewController.h; sourceTree = "<group>"; };
 		32419F5F249711CD0019B54D /* JCtestVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCtestVCViewController.m; sourceTree = "<group>"; };
+		3247C49825B9A0A9005AABB7 /* JCGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCGCDViewController.h; sourceTree = "<group>"; };
+		3247C49925B9A0A9005AABB7 /* JCGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGCDViewController.m; sourceTree = "<group>"; };
 		324A11CD2582428A000E0B00 /* JCAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAlgorithmViewController.h; sourceTree = "<group>"; };
 		324A11CE2582428A000E0B00 /* JCAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAlgorithmViewController.m; sourceTree = "<group>"; };
 		32768997255020350082A256 /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
@@ -566,6 +569,15 @@
 				32419F5F249711CD0019B54D /* JCtestVCViewController.m */,
 			);
 			path = wkWebConsole;
+			sourceTree = "<group>";
+		};
+		3247C49725B9A08B005AABB7 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				3247C49825B9A0A9005AABB7 /* JCGCDViewController.h */,
+				3247C49925B9A0A9005AABB7 /* JCGCDViewController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		324A11CC25824256000E0B00 /* algorithmModule */ = {
@@ -945,6 +957,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3247C49725B9A08B005AABB7 /* GCD */,
 				324A11CC25824256000E0B00 /* algorithmModule */,
 				32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */,
 				3276894325501E6E0082A256 /* MasonryLayoutDemo */,
@@ -1630,6 +1643,7 @@
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
 				32768A6B25502BDD0082A256 /* YYSpriteSheetImage.m in Sources */,
+				3247C49A25B9A0A9005AABB7 /* JCGCDViewController.m in Sources */,
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,
 				32392C522382F0C900D440A2 /* JCAssociatedObjectViewController.m in Sources */,
 				32768A8825502BDE0082A256 /* UIPasteboard+YYText.m in Sources */,
