@@ -18,38 +18,51 @@
     [super viewDidLoad];
     self.navigationItem.title = @"算法列表";
     self.view.backgroundColor = [UIColor whiteColor];
-    [self bubbleSortMethod];
+    [self selectSortMethodTest];
 }
 #pragma mark - 选择排序
-- (void)selectSortMethod{
-    
-    NSArray *arr = @[@10,@6,@8,@9,@12,@11];
-//    NSInteger objNum = arr.count;
-//    int k;
-//    for (int i = 0; i < objNum; i++) {
-//        k = i;
-//        for (int j = i + 1; j < objNum; j++) {
-//            int tempK = [arr[k] intValue];
-//            int tempJ = [arr[j] intValue];
-//            if (tempK > tempJ) {
-//                tempK = tempJ;
-//            }
-//        }
-//        if (k != i) {
-//            int temp = [arr[k] intValue];
-//            arr[k] = arr[i];
-//            arr[i] = temp;
-//        }
-//    }
+/**
+选择排序（Selection sort）是一种简单直观的排序算法。
 
+工作原理是：第一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后再从剩余的未排序元素中寻找到最小（大）元素，然后放到已排序的序列的末尾。以此类推，直到全部待排序的数据元素的个数为零。选择排序是不稳定的排序方法。
+*/
+
+- (void)selectSortMethodTest{
     
+    NSArray *oringeList = @[@(10),@(1),@(2),@(9),@(-1),@(7),@(19),@(5),@(-9),@(3),@(8),@(13),@(17)];
+    NSMutableArray * afterList = [NSMutableArray arrayWithArray:[self selectSortMethod:oringeList]];
+    
+    [self showBubbleSortResult:afterList];
+  
+    
+}
+
+//算法封装方法
+- (NSArray *)selectSortMethod:(NSArray *)dataArr{
+    if (dataArr.count <= 1) {
+        return dataArr;
+    }
+    NSMutableArray *tempArr = [NSMutableArray arrayWithArray:dataArr];
+    NSInteger minIndex;
+    for (NSInteger i = 0 ; i < tempArr.count - 1; i++) {
+        minIndex = i;
+        for (NSInteger j = i+1; j < tempArr.count; j++) {
+            if ([tempArr[j] integerValue] < [tempArr[minIndex] integerValue]) {
+                minIndex = j;
+            }
+        }
+      if (i != minIndex) {
+      [tempArr exchangeObjectAtIndex:i withObjectAtIndex:minIndex];
+    }
+   }
+  return tempArr;
 }
 
 #pragma mark - 冒泡排序
 - (void)bubbleSortMethod{
     
-    int iCount  = 0;
-    int jCount  = 0;
+    int iCount  = 0;//记录外层循环的次数
+    int jCount  = 0;//记录内存循环交换的次数
      NSMutableArray *array = [NSMutableArray arrayWithArray:@[@10,@1,@2,@9,@7,@19,@5,@3,@8,@13,@17]];
     NSInteger arrCount = array.count - 1;
     for (int i = 0; i < arrCount; i++) {//外层for循环控制循环次数
@@ -59,17 +72,15 @@
             if ([array[j] intValue] > [array[j + 1] intValue]) {
                 [array exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
             }
-            [self logArr:array];
+            [self showBubbleSortResult:array];
         }
     }
-    
-    NSLog(@"循环次数：%d",jCount);
-    NSLog(@"共%d次比较",iCount);
-   
+    NSLog(@"循环次数：%d",iCount);
+    NSLog(@"共%d次比较",jCount);
 }
 
 //打印数组
-- (void)logArr:(NSMutableArray * )array {
+- (void)showBubbleSortResult:(NSMutableArray * )array {
     NSString * str = @"";
     for (NSNumber * value in array) {
        str = [str stringByAppendingString:[NSString stringWithFormat:@"%zd ",[value integerValue]]];
