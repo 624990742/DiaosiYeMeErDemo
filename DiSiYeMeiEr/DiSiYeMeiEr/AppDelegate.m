@@ -9,14 +9,30 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property(nonatomic,strong)NSMutableArray *testArr;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Override point for customization after application 
+    
+//    NSString *testStr = @"helloWorld123";
+//    NSString *str1 = [testStr substringFromIndex:3];
+//    NSLog(@"str1==>%@",str1);
+//    NSString *str1 = [testStr substringToIndex:3];
+//    NSString *str2 = [testStr substringWithRange:NSMakeRange(6,3)];
+//    NSString *str3 = [str1 stringByAppendingString:str2];
+//    NSLog(@"str1:%@,str2:%@,str3:%@,str:%@",str1,str2,str3,testStr);
+    
+    
+    
+    
+    
+
+    
+    
     
 //    NSLog(@"测试打印：%@",[NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)]);
     return YES;

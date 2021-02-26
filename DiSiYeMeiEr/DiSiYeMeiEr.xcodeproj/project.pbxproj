@@ -115,6 +115,7 @@
 		32768AC725502DAE0082A256 /* HBTextChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768AC325502DAE0082A256 /* HBTextChangeVC.m */; };
 		327A7B2825B94EAD0021B234 /* JWeakAndStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A7B2725B94EAD0021B234 /* JWeakAndStrongViewController.m */; };
 		327A7B2B25B94F730021B234 /* JCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A7B2A25B94F730021B234 /* JCTestObject.m */; };
+		327FFE5725E5F47D00EEC87E /* JCTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 327FFE5625E5F47D00EEC87E /* JCTestObj.m */; };
 		329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F7229235C3B5600D2644B /* JCMasExampleListViewController.m */; };
 		329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722C235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m */; };
 		329F7230235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F722F235C3FD500D2644B /* JCMASExampleSafeAreaLayoutGuideViewController.m */; };
@@ -382,6 +383,8 @@
 		327A7B2725B94EAD0021B234 /* JWeakAndStrongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWeakAndStrongViewController.m; sourceTree = "<group>"; };
 		327A7B2925B94F730021B234 /* JCTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTestObject.h; sourceTree = "<group>"; };
 		327A7B2A25B94F730021B234 /* JCTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestObject.m; sourceTree = "<group>"; };
+		327FFE5525E5F47D00EEC87E /* JCTestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTestObj.h; sourceTree = "<group>"; };
+		327FFE5625E5F47D00EEC87E /* JCTestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestObj.m; sourceTree = "<group>"; };
 		329F721F235C38FD00D2644B /* disiYeMeiPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disiYeMeiPch.pch; sourceTree = "<group>"; };
 		329F7222235C3A5200D2644B /* libsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libsHeader.h; sourceTree = "<group>"; };
 		329F7228235C3B5600D2644B /* JCMasExampleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMasExampleListViewController.h; sourceTree = "<group>"; };
@@ -1201,6 +1204,8 @@
 		3AB50ACB1FC4817B0081CD33 = {
 			isa = PBXGroup;
 			children = (
+				327FFE5525E5F47D00EEC87E /* JCTestObj.h */,
+				327FFE5625E5F47D00EEC87E /* JCTestObj.m */,
 				3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */,
 				3AB50AEF1FC4817B0081CD33 /* DiSiYeMeiErTests */,
 				3AB50AFA1FC4817B0081CD33 /* DiSiYeMeiErUITests */,
@@ -1649,6 +1654,7 @@
 				32768A8825502BDE0082A256 /* UIPasteboard+YYText.m in Sources */,
 				32768A7925502BDD0082A256 /* YYTextMagnifier.m in Sources */,
 				32419F5B2497118A0019B54D /* WKWebViewConfiguration+Console.m in Sources */,
+				327FFE5725E5F47D00EEC87E /* JCTestObj.m in Sources */,
 				32768A9525502BDE0082A256 /* UIBarButtonItem+YYAdd.m in Sources */,
 				32768A9325502BDE0082A256 /* UIScreen+YYAdd.m in Sources */,
 				32F8E38D23B09065009F9041 /* JCMoreViewOrButton.m in Sources */,

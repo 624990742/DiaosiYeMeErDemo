@@ -14,16 +14,34 @@
 #import "NSObject+YYAddForARC.h"
 void(^block)(void);
 @interface JWeakAndStrongViewController ()
-
+@property(nonatomic,strong)NSMutableArray *tempArr;
 @end
 
 @implementation JWeakAndStrongViewController
 
++(void)load{
+    [super load];
+    NSLog(@"--load--");
+}
++(void)initialize{
+    [super initialize];
+    NSLog(@"--initialize--");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self testDemo4];
+
+    
 }
+
+
+
+
+
+
+
+
+
 
 /**
  下边代码分析：
