@@ -964,7 +964,6 @@
 				324A11CC25824256000E0B00 /* algorithmModule */,
 				32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */,
 				3276894325501E6E0082A256 /* MasonryLayoutDemo */,
-				32CB001424EF703C0050DE95 /* curveImageModule */,
 				32419F54249711530019B54D /* wkWebConsole */,
 				32A1AEEB240404C300109603 /* Screenshots */,
 				32312ADD23B1E0DF00381E23 /* Library */,
@@ -1138,13 +1137,6 @@
 				320D61D7239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m */,
 			);
 			path = SpeciesPattern;
-			sourceTree = "<group>";
-		};
-		32CB001424EF703C0050DE95 /* curveImageModule */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = curveImageModule;
 			sourceTree = "<group>";
 		};
 		32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */ = {
@@ -1870,7 +1862,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.imooc.www.Block1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiachen.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_SYMBOL_EDIT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1906,7 +1898,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.imooc.www.Block1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiachen.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SEPARATE_SYMBOL_EDIT = NO;
 				TARGETED_DEVICE_FAMILY = 1;

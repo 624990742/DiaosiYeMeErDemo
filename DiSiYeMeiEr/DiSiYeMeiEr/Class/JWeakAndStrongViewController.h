@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JWeakAndStrongViewController : ViewController
-
+- (instancetype)initWithVcName:(NSString *)vcName size:(NSInteger)size;
 @end
 
 NS_ASSUME_NONNULL_END

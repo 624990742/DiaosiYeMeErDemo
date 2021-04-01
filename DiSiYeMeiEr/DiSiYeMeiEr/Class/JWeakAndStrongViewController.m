@@ -19,14 +19,14 @@ void(^block)(void);
 
 @implementation JWeakAndStrongViewController
 
-+(void)load{
-    [super load];
-    NSLog(@"--load--");
+- (instancetype)initWithVcName:(NSString *)vcName size:(NSInteger)size{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
 }
-+(void)initialize{
-    [super initialize];
-    NSLog(@"--initialize--");
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];

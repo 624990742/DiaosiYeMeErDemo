@@ -126,6 +126,8 @@
                   }
            case 9:
             {
+                [JWeakAndStrongViewController alloc] ;
+                
             [self.navigationController pushViewController:[JWeakAndStrongViewController new]
                 animated:YES];
                 break;
