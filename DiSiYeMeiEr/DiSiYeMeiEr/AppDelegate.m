@@ -25,21 +25,9 @@
 //    NSString *str2 = [testStr substringWithRange:NSMakeRange(6,3)];
 //    NSString *str3 = [str1 stringByAppendingString:str2];
 //    NSLog(@"str1:%@,str2:%@,str3:%@,str:%@",str1,str2,str3,testStr);
-    
-    
-    NSString *str = @"你得aa";
-    
-    BOOL satte = [str isChineseText];
-    if (satte) {
-        NSLog(@"全是中文");
-    } else {
-        NSLog(@"不是");
-    }
-
-    
-    
-    
 //    NSLog(@"测试打印：%@",[NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)]);
+    
+  
     return YES;
 }
 

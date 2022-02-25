@@ -149,6 +149,7 @@
 		3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA4FFC1FCC59E3006D5DAB /* CustomButtonVC.m */; };
 		3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */; };
 		3ACA50061FCC6673006D5DAB /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA50051FCC6673006D5DAB /* images.xcassets */; };
+		59FB63F227C87FAC00837160 /* JCQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FB63F127C87FAC00837160 /* JCQueueViewController.m */; };
 		71FEB71E7EAAD61B224B1502 /* Pods_DiSiYeMeiErTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55036D2F9D1A11922C0C83B /* Pods_DiSiYeMeiErTests.framework */; };
 		A11589A2609D3DC3082D78BD /* Pods_DiSiYeMeiEr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70ACE5C3F2F1DB6BBE36AAA /* Pods_DiSiYeMeiEr.framework */; };
 /* End PBXBuildFile section */
@@ -452,6 +453,8 @@
 		3ACA50021FCC636C006D5DAB /* UIButton+customeBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+customeBtn.h"; sourceTree = "<group>"; };
 		3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+customeBtn.m"; sourceTree = "<group>"; };
 		3ACA50051FCC6673006D5DAB /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		59FB63F027C87FAC00837160 /* JCQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCQueueViewController.h; sourceTree = "<group>"; };
+		59FB63F127C87FAC00837160 /* JCQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCQueueViewController.m; sourceTree = "<group>"; };
 		6602E8052FCEF596B2ABC3B2 /* Pods-DiSiYeMeiEr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiSiYeMeiEr.release.xcconfig"; path = "Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr.release.xcconfig"; sourceTree = "<group>"; };
 		8F02350112BE84FF079746E1 /* Pods-DiSiYeMeiEr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiSiYeMeiEr.debug.xcconfig"; path = "Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1BB612D00844CF316A8638 /* Pods-DiSiYeMeiErTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiSiYeMeiErTests.release.xcconfig"; path = "Target Support Files/Pods-DiSiYeMeiErTests/Pods-DiSiYeMeiErTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -960,6 +963,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				59FB63EF27C87F6E00837160 /* JCQueue */,
 				3247C49725B9A08B005AABB7 /* GCD */,
 				324A11CC25824256000E0B00 /* algorithmModule */,
 				32D80E72257FA7BA0054C3AE /* RuntimeMessageForwarding */,
@@ -1267,6 +1271,15 @@
 				3ACA50031FCC636C006D5DAB /* UIButton+customeBtn.m */,
 			);
 			path = BtnCategory;
+			sourceTree = "<group>";
+		};
+		59FB63EF27C87F6E00837160 /* JCQueue */ = {
+			isa = PBXGroup;
+			children = (
+				59FB63F027C87FAC00837160 /* JCQueueViewController.h */,
+				59FB63F127C87FAC00837160 /* JCQueueViewController.m */,
+			);
+			path = JCQueue;
 			sourceTree = "<group>";
 		};
 		A437102520DD452C374B31C0 /* Frameworks */ = {
@@ -1603,6 +1616,7 @@
 				32768A8025502BDD0082A256 /* YYTextKeyboardManager.m in Sources */,
 				32768A8425502BDE0082A256 /* YYTextUtilities.m in Sources */,
 				32768A6625502BDD0082A256 /* YYCache.m in Sources */,
+				59FB63F227C87FAC00837160 /* JCQueueViewController.m in Sources */,
 				320D61D5239781DD005FFFBA /* JCSpeciesEmployeeTypeDesigner.m in Sources */,
 				32768A7725502BDD0082A256 /* YYClassInfo.m in Sources */,
 				32768A6725502BDD0082A256 /* YYKVStorage.m in Sources */,
