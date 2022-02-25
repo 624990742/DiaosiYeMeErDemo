@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NSString+JCMethond.h"
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
 @end
@@ -27,9 +27,14 @@
 //    NSLog(@"str1:%@,str2:%@,str3:%@,str:%@",str1,str2,str3,testStr);
     
     
+    NSString *str = @"你得aa";
     
-    
-    
+    BOOL satte = [str isChineseText];
+    if (satte) {
+        NSLog(@"全是中文");
+    } else {
+        NSLog(@"不是");
+    }
 
     
     

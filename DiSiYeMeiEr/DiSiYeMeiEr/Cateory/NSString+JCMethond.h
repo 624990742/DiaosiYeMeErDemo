@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (JCMethond)
 - (NSString *)JC_customLowercaseString;
+/** 是否是纯中文 */
+- (BOOL)isChineseText;
 @end
 
 NS_ASSUME_NONNULL_END
