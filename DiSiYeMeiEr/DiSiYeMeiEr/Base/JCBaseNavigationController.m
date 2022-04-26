@@ -8,6 +8,7 @@
 
 #import "JCBaseNavigationController.h"
 #define kBarTintColor [UIColor colorWithRed:105/255.0 green:100/255.0 blue:120/255.0 alpha:1]
+
 @implementation JCBaseNavigationController
 
 -(void)viewDidLoad
@@ -17,6 +18,7 @@
     self.navigationBar.barTintColor = kBarTintColor;
     self.navigationBar.translucent = NO;
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:20]} ];
+  
 }
 
 

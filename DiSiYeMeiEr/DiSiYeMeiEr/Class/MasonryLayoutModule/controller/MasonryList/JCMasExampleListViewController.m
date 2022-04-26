@@ -59,9 +59,6 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
        NSLog(@"%@",self.blankTitleTest);
-    [self.navigationController.navigationBar jc_navBarBackGroundColor:[UIColor greenColor] image:nil isOpaque:YES];//颜色
-    ///更改高度
-//    [self.navigationController.navigationBar jc_navBarMyLayerHeight:90 isOpaque:YES];//背景高度
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:kMASCellIdentifier];
     

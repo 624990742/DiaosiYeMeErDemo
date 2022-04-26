@@ -173,6 +173,7 @@
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
 		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
+		592DEC272817FAE5000091F0 /* JCProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC262817FAE5000091F0 /* JCProgressBarController.m */; };
 		59FB63F227C87FAC00837160 /* JCQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FB63F127C87FAC00837160 /* JCQueueViewController.m */; };
 		71FEB71E7EAAD61B224B1502 /* Pods_DiSiYeMeiErTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55036D2F9D1A11922C0C83B /* Pods_DiSiYeMeiErTests.framework */; };
 		A11589A2609D3DC3082D78BD /* Pods_DiSiYeMeiEr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70ACE5C3F2F1DB6BBE36AAA /* Pods_DiSiYeMeiEr.framework */; };
@@ -527,6 +528,8 @@
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
 		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
 		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
+		592DEC252817FAE5000091F0 /* JCProgressBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCProgressBarController.h; sourceTree = "<group>"; };
+		592DEC262817FAE5000091F0 /* JCProgressBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCProgressBarController.m; sourceTree = "<group>"; };
 		59FB63F027C87FAC00837160 /* JCQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCQueueViewController.h; sourceTree = "<group>"; };
 		59FB63F127C87FAC00837160 /* JCQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCQueueViewController.m; sourceTree = "<group>"; };
 		6602E8052FCEF596B2ABC3B2 /* Pods-DiSiYeMeiEr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiSiYeMeiEr.release.xcconfig"; path = "Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr.release.xcconfig"; sourceTree = "<group>"; };
@@ -1025,6 +1028,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				592DEC242817FAA3000091F0 /* JCProgressBar */,
 				59114D6527EC503500CCD3CF /* GestureSummary */,
 				59FB63EF27C87F6E00837160 /* JCQueue */,
 				3247C49725B9A08B005AABB7 /* GCD */,
@@ -1476,6 +1480,15 @@
 			path = UINavigationBar;
 			sourceTree = "<group>";
 		};
+		592DEC242817FAA3000091F0 /* JCProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				592DEC252817FAE5000091F0 /* JCProgressBarController.h */,
+				592DEC262817FAE5000091F0 /* JCProgressBarController.m */,
+			);
+			path = JCProgressBar;
+			sourceTree = "<group>";
+		};
 		59FB63EF27C87F6E00837160 /* JCQueue */ = {
 			isa = PBXGroup;
 			children = (
@@ -1915,6 +1928,7 @@
 				32768A8A25502BDE0082A256 /* YYTextArchiver.m in Sources */,
 				32768A7325502BDD0082A256 /* CALayer+YYWebImage.m in Sources */,
 				3AB50AD91FC4817B0081CD33 /* AppDelegate.m in Sources */,
+				592DEC272817FAE5000091F0 /* JCProgressBarController.m in Sources */,
 				32768A7825502BDD0082A256 /* YYTextView.m in Sources */,
 				32768AA425502BDE0082A256 /* NSString+YYAdd.m in Sources */,
 			);

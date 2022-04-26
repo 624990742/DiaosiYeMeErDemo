@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NSString+JCMethond.h"
+#import "UINavigationBar+JCNavigationBarHandle.h"
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
 @end
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
+    
     return YES;
 }
 

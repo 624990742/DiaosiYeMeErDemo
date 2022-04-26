@@ -21,27 +21,59 @@
 #import "JWeakAndStrongViewController.h"
 #import "JCQueueViewController.h"
 #import "JCSummaryTableVC.h"
+#import "UINavigationBar+JCNavigationBarHandle.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
+@property(nonatomic,strong) NSDictionary * allVCs;
 @end
 
 @implementation ViewController
-- (NSArray *)dataScource{
-    if (!_dataScource) {
-        _dataScource = @[@"MasonryDemo练习",@"Runtime的使用",@"设计模式只类族模式",@"截屏图片",@"输入框对键盘的优化",@"打印",@"使用masonry实现自适应",@"消息转发案例",@"算法案例",@"__weak和__strong的使用场景",@"多线程NSBlockOperation",@"手势相关"];
-    }
-    return _dataScource;
+//- (NSArray *)dataScource{
+//    if (!_dataScource) {
+//        _dataScource = @[@"MasonryDemo练习",
+//                         @"Runtime的使用",
+//                         @"设计模式只类族模式",
+//                         @"截屏图片",
+//                         @"输入框对键盘的优化",
+//                         @"打印",
+//                         @"使用masonry实现自适应",
+//                         @"消息转发案例",
+//                         @"算法案例",
+//                         @"__weak和__strong的使用场景",
+//                         @"多线程NSBlockOperation",
+//                         @"手势相关",
+//                         @"绘制进度条"];
+//    }
+//    return _dataScource;
+//}
+
+
+
+- (NSDictionary *)allVCs{
+    
+    return @{
+        @"MasonryDemo练习":[[JCMasExampleListViewController alloc] init],
+        @"Runtime的使用":[[JCAssociatedObjectViewController alloc] init],
+        @"设计模式只类族模式":[[JCSpeciesPatternViewController alloc] init],
+        @"截屏图片":[[JCScreenshotsViewController alloc] init],
+        @"输入框对键盘的优化":[[TextFilterAbilityVC alloc] init],
+        @"使用masonry实现自适应":[[HBTextChangeVC alloc] init],
+        @"消息转发案例":[[JCRuntimeMessageForwardingVC alloc] init],
+        @"手势相关":[[JCSummaryTableVC alloc] init],
+        @"算法案例":[[JCAlgorithmViewController alloc] init],
+        @"__weak和__strong的使用场景":[[JWeakAndStrongViewController alloc] init],
+        @"多线程NSBlockOperation":[[JCQueueViewController alloc] init],
+        @"web 交互":[[JCtestVCViewController alloc] init],
+    };
 }
-
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"开发常用总结";
- 
-    
+    [self.navigationController.navigationBar jc_navBarBackGroundColor:[UIColor whiteColor] image:nil isOpaque:YES];//颜色
+    [self.navigationController.navigationBar jc_navBarBottomLineHidden:YES];
+    self.dataScource = self.allVCs.allKeys;
 }
 
 
@@ -65,95 +97,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    switch (indexPath.row) {
-        case 0:{
-            JCMasExampleListViewController *_examplisVC = [[JCMasExampleListViewController alloc] init];
-            [self.navigationController pushViewController:_examplisVC animated:YES];
-            
-            break;
-        }
-        case 1:
-        {
-            [self.navigationController pushViewController:[JCAssociatedObjectViewController new] animated:YES];
-            
-            break;
-        }
-        case 2:
-        {
-            [self.navigationController pushViewController:[JCSpeciesPatternViewController new] animated:YES];
-            break;
-        }
-        case 3:
-        {
-            [self.navigationController pushViewController:[JCScreenshotsViewController new] animated:YES];
-            break;
-        }
-        
-        case 4:
-        {
-             [self.navigationController pushViewController:[TextFilterAbilityVC new] animated:YES];
-            break;
-        }
-            
-        case 5:
-        {
-            [self.navigationController pushViewController:[JCtestVCViewController new] animated:YES];
-            
-            break;
-        }
-        
-        case 6:
-        {
-            [self.navigationController pushViewController:[HBTextChangeVC new]
-             animated:YES];
-            
-            
-            break;
-        }
-        case 7:
-       {
-       
-         [self.navigationController pushViewController:[JCRuntimeMessageForwardingVC new]
-            animated:YES];
-           break;
-        }
-            
-            case 8:
-                 {
-              [self.navigationController pushViewController:[JCAlgorithmViewController new]
-                      animated:YES];
-                     break;
-                  }
-           case 9:
-            {
-               
-            [self.navigationController pushViewController:[JWeakAndStrongViewController new]
-                animated:YES];
-                break;
-           }
-        case 10:
-         {
-         [self.navigationController pushViewController:[JCQueueViewController new]
-             animated:YES];
-             break;
-        }
-        case 11:
-         {
-         [self.navigationController pushViewController:[JCSummaryTableVC new]
-             animated:YES];
-             break;
-        }
-            
-            
-        default:
-            break;
-    }
-    
-    
-  
-//    JCStreamUsageVC *testVC = [[JCStreamUsageVC  alloc] init];
-//    [self.navigationController pushViewController:testVC animated:YES];
+ 
+    [self.navigationController pushViewController:[self.allVCs objectForKey:self.dataScource[indexPath.row]] animated:YES];
 }
 
 
