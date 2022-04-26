@@ -11,7 +11,7 @@
 @implementation JCBaseNavigationController
 
 -(void)viewDidLoad
-{
+{  [super viewDidLoad];
     [self.navigationBar setBarStyle:UIBarStyleDefault];
     self.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationBar.barTintColor = kBarTintColor;

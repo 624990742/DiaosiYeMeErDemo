@@ -16,29 +16,21 @@
 #import "JCCompositeEdgesView.h"
 #import "JCAspectFitView.h"
 #import "JCMoreViewOrButton.h"
-
+#import "UINavigationBar+JCNavigationBarHandle.h"
 
 
 static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 @interface JCMasExampleListViewController ()
 @property (nonatomic, strong) NSString *blankTitleTest;
-
 @property (nonatomic, strong) NSArray *exampleControllers;
-
 @end
 
 @implementation JCMasExampleListViewController
-
-
-/*
- 
+/**
  //是一个类方法,用来判断该类的的实例(即对象)是否响应某个方法
  + (BOOL)instancesRespondToSelector:(SEL)aSelector;
- 
  //是一个实例(对象)方法,用来判断该实例(对象)是否响应某个方法
  - (BOOL)respondsToSelector:(SEL)aSelector
- 
- 
  */
 - (instancetype)init{
     if (!self) return nil;
@@ -52,21 +44,14 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
         [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用约束" viewClass:JCUseingConstantsView.class],
        [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用内边距添加约束" viewClass:JCCompositeEdgesView.class],
       [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"Masonry使用内边距添加约束" viewClass:JCAspectFitView.class], [[JCMASExampleLayoutGuideViewController alloc] initWithTitle:@"多个View或者多个Button布局" viewClass:JCMoreViewOrButton.class],
-    
-
       ];
-    
-    
     if ([UIViewController instancesRespondToSelector:@selector(topLayoutGuide)]) {
         self.exampleControllers = [self.exampleControllers arrayByAddingObject:[[JCMASExampleLayoutGuideViewController alloc] init]];
     }
     if ([UIView instancesRespondToSelector:@selector(safeAreaLayoutGuide)]) {
-
         self.exampleControllers = [self.exampleControllers arrayByAddingObject:[[JCMASExampleSafeAreaLayoutGuideViewController alloc] init]];
     }
-                                   
-
-    
+                
     return self;
 }
 
@@ -74,6 +59,9 @@ static NSString * const kMASCellIdentifier = @"kMASCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
        NSLog(@"%@",self.blankTitleTest);
+    [self.navigationController.navigationBar jc_navBarBackGroundColor:[UIColor greenColor] image:nil isOpaque:YES];//颜色
+    ///更改高度
+//    [self.navigationController.navigationBar jc_navBarMyLayerHeight:90 isOpaque:YES];//背景高度
     self.view.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:kMASCellIdentifier];
     

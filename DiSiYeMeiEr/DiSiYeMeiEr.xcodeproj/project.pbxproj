@@ -109,7 +109,6 @@
 		32768AB525502BDE0082A256 /* YYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768A5F25502BDD0082A256 /* YYReachability.m */; };
 		32768AB625502BDE0082A256 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 32768A6125502BDD0082A256 /* LICENSE */; };
 		32768AB725502BDE0082A256 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32768A6225502BDD0082A256 /* README.md */; };
-		32768AB825502BDE0082A256 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32768A6425502BDD0082A256 /* WebP.framework */; };
 		32768AC525502DAE0082A256 /* HBTextChangeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768ABB25502DAE0082A256 /* HBTextChangeTabCell.m */; };
 		32768AC625502DAE0082A256 /* HBTextChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768ABF25502DAE0082A256 /* HBTextChangeModel.m */; };
 		32768AC725502DAE0082A256 /* HBTextChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32768AC325502DAE0082A256 /* HBTextChangeVC.m */; };
@@ -173,6 +172,7 @@
 		59114DB227EC518C00CCD3CF /* JCOriginalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114D9F27EC518C00CCD3CF /* JCOriginalViewController.m */; };
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
+		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
 		59FB63F227C87FAC00837160 /* JCQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FB63F127C87FAC00837160 /* JCQueueViewController.m */; };
 		71FEB71E7EAAD61B224B1502 /* Pods_DiSiYeMeiErTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55036D2F9D1A11922C0C83B /* Pods_DiSiYeMeiErTests.framework */; };
 		A11589A2609D3DC3082D78BD /* Pods_DiSiYeMeiEr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70ACE5C3F2F1DB6BBE36AAA /* Pods_DiSiYeMeiEr.framework */; };
@@ -525,6 +525,8 @@
 		59114DA127EC518C00CCD3CF /* JCPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPushViewController.m; sourceTree = "<group>"; };
 		59114DB427EC51A400CCD3CF /* JCSummaryTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSummaryTableVC.h; sourceTree = "<group>"; };
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
+		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
+		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
 		59FB63F027C87FAC00837160 /* JCQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCQueueViewController.h; sourceTree = "<group>"; };
 		59FB63F127C87FAC00837160 /* JCQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCQueueViewController.m; sourceTree = "<group>"; };
 		6602E8052FCEF596B2ABC3B2 /* Pods-DiSiYeMeiEr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiSiYeMeiEr.release.xcconfig"; path = "Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr.release.xcconfig"; sourceTree = "<group>"; };
@@ -543,7 +545,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32768AB825502BDE0082A256 /* WebP.framework in Frameworks */,
 				A11589A2609D3DC3082D78BD /* Pods_DiSiYeMeiEr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,7 +664,6 @@
 				32768AC125502DAE0082A256 /* Controller */,
 				32768ABE25502DAE0082A256 /* Model */,
 				32768AB925502DAE0082A256 /* View */,
-				3276894825501FB70082A256 /* Lib */,
 			);
 			path = MasonryLayoutDemo;
 			sourceTree = "<group>";
@@ -672,9 +672,9 @@
 			isa = PBXGroup;
 			children = (
 				327689AF25502BDC0082A256 /* YYKit */,
+				32768996255020350082A256 /* HYBMasonryAutoCellHeight */,
 				3276899E2550204E0082A256 /* NSString+LeeLabelAddtion.h */,
 				3276899D2550204E0082A256 /* NSString+LeeLabelAddtion.m */,
-				32768996255020350082A256 /* HYBMasonryAutoCellHeight */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -1232,6 +1232,7 @@
 		32F8E38E23B09269009F9041 /* Cateory */ = {
 			isa = PBXGroup;
 			children = (
+				592DEC202817EF79000091F0 /* UINavigationBar */,
 				59114D6727EC505800CCD3CF /* UISearchBar+JCSearchBarPlaceholder.h */,
 				59114D6627EC505800CCD3CF /* UISearchBar+JCSearchBarPlaceholder.m */,
 				32F8E38F23B092C9009F9041 /* UIColor+JCColorCategory.h */,
@@ -1290,8 +1291,9 @@
 			children = (
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
-				59114D6927EC507200CCD3CF /* Base */,
 				329F7223235C3A9500D2644B /* Class */,
+				59114D6927EC507200CCD3CF /* Base */,
+				3276894825501FB70082A256 /* Lib */,
 				329F7221235C3A3D00D2644B /* Define */,
 				32F8E38E23B09269009F9041 /* Cateory */,
 				329F7220235C390400D2644B /* Other */,
@@ -1463,6 +1465,15 @@
 				59114DA127EC518C00CCD3CF /* JCPushViewController.m */,
 			);
 			path = Notice;
+			sourceTree = "<group>";
+		};
+		592DEC202817EF79000091F0 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */,
+				592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */,
+			);
+			path = UINavigationBar;
 			sourceTree = "<group>";
 		};
 		59FB63EF27C87F6E00837160 /* JCQueue */ = {
@@ -1892,6 +1903,7 @@
 				32768A9D25502BDE0082A256 /* NSObject+YYAdd.m in Sources */,
 				32768A6F25502BDD0082A256 /* _YYWebImageSetter.m in Sources */,
 				32768A8D25502BDE0082A256 /* UIBezierPath+YYAdd.m in Sources */,
+				592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				32768A9F25502BDE0082A256 /* NSThread+YYAdd.m in Sources */,
 				32768A9925502BDE0082A256 /* UIFont+YYAdd.m in Sources */,
