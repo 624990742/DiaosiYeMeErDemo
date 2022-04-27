@@ -28,25 +28,20 @@
     
     if (type == 1) {
         [self testDemo1];
-    } else if (type == 2){
-        [self testDemo2];
+    } else if (type == 2 || type == 3){
+        [self testDemo2WithType:type];
+    } else if (type == 4){
+        
     }
 }
 
 
 #pragma mark - 绘制二
-- (void)testDemo2{
+- (void)testDemo2WithType:(NSInteger)type{
     
-    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(50, 300, self.view.frame.size.width - 100, 30)];
-    testView.backgroundColor = [[UIColor colorWithRed:48/255.0 green:149/255.0 blue:215/255.0 alpha:1] colorWithAlphaComponent:0.3];
-    testView.layer.cornerRadius = testView.frame.size.height * 0.5;
-    testView.layer.masksToBounds = YES;
-    [self.view addSubview:testView];
-    
-    JCProgressView *progressView = [[JCProgressView alloc] initWithFrame:CGRectMake(50, 300,self.view.frame.size.width - 100, 30)];
+    JCProgressView *progressView = [[JCProgressView alloc] initWithFrame:CGRectMake(50, 300,self.view.frame.size.width - 100, 30) type:type];
     [self.view addSubview:progressView];
     self.progressView = progressView;
-    
     [self startTime];
 }
 

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JCProgressView : UIView
 @property(nonatomic,assign)CGFloat progress;
+- (instancetype)initWithFrame:(CGRect)frame
+                         type:(NSInteger)type;
 - (void)start;
 - (void)pause;
 - (void)stop;
