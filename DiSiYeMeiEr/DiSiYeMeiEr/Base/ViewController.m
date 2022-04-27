@@ -22,6 +22,7 @@
 #import "JCQueueViewController.h"
 #import "JCSummaryTableVC.h"
 #import "UINavigationBar+JCNavigationBarHandle.h"
+#import "JCProgressBarVC.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -29,29 +30,11 @@
 @end
 
 @implementation ViewController
-//- (NSArray *)dataScource{
-//    if (!_dataScource) {
-//        _dataScource = @[@"MasonryDemo练习",
-//                         @"Runtime的使用",
-//                         @"设计模式只类族模式",
-//                         @"截屏图片",
-//                         @"输入框对键盘的优化",
-//                         @"打印",
-//                         @"使用masonry实现自适应",
-//                         @"消息转发案例",
-//                         @"算法案例",
-//                         @"__weak和__strong的使用场景",
-//                         @"多线程NSBlockOperation",
-//                         @"手势相关",
-//                         @"绘制进度条"];
-//    }
-//    return _dataScource;
-//}
 
-
-
+#pragma mark -
 - (NSDictionary *)allVCs{
     
+   
     return @{
         @"MasonryDemo练习":[[JCMasExampleListViewController alloc] init],
         @"Runtime的使用":[[JCAssociatedObjectViewController alloc] init],
@@ -65,6 +48,7 @@
         @"__weak和__strong的使用场景":[[JWeakAndStrongViewController alloc] init],
         @"多线程NSBlockOperation":[[JCQueueViewController alloc] init],
         @"web 交互":[[JCtestVCViewController alloc] init],
+        @"自定义进度条":[[JCProgressBarVC alloc] init],
     };
 }
 
