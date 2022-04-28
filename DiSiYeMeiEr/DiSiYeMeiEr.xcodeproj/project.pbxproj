@@ -177,6 +177,7 @@
 		59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */; };
 		59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */; };
 		59914D3E281A2CFB00DA979F /* JCSpecialFieldUseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */; };
+		59914D41281A36D100DA979F /* JCSpecialFieldUseViewTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */; };
 		59D7A760281920AC00804EF7 /* JCProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */; };
 		59D7A761281920AC00804EF7 /* JCProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */; };
 		59D7A76428192B5000804EF7 /* JCCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A76328192B5000804EF7 /* JCCanvasViewController.m */; };
@@ -541,6 +542,8 @@
 		59914D38281A28A600DA979F /* JCSpecialFieldUseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseView.h; sourceTree = "<group>"; };
 		59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseView.m; sourceTree = "<group>"; };
 		59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseView.xib; sourceTree = "<group>"; };
+		59914D3F281A36D100DA979F /* JCSpecialFieldUseViewTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseViewTest2.h; sourceTree = "<group>"; };
+		59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseViewTest2.m; sourceTree = "<group>"; };
 		59D7A75D281920AC00804EF7 /* JCProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCProgressBarVC.h; sourceTree = "<group>"; };
 		59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCProgressBarVC.m; sourceTree = "<group>"; };
 		59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCProgressBarVC.xib; sourceTree = "<group>"; };
@@ -1533,6 +1536,8 @@
 				59914D38281A28A600DA979F /* JCSpecialFieldUseView.h */,
 				59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */,
 				59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */,
+				59914D3F281A36D100DA979F /* JCSpecialFieldUseViewTest2.h */,
+				59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1961,6 +1966,7 @@
 				32768A8725502BDE0082A256 /* NSAttributedString+YYText.m in Sources */,
 				329F7247235C694800D2644B /* JCCompositeEdgesView.m in Sources */,
 				3AB50AE71FC4817B0081CD33 /* main.m in Sources */,
+				59914D41281A36D100DA979F /* JCSpecialFieldUseViewTest2.m in Sources */,
 				32768A6B25502BDD0082A256 /* YYSpriteSheetImage.m in Sources */,
 				3247C49A25B9A0A9005AABB7 /* JCGCDViewController.m in Sources */,
 				329F7238235C512100D2644B /* JCUpdateConstraintsView.m in Sources */,

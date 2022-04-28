@@ -1,23 +1,14 @@
 //
-//  JCSpecialFieldUseView.m
+//  JCSpecialFieldUseViewTest2.m
 //  DiSiYeMeiEr
 //
 //  Created by jcmac on 2022/4/28.
 //  Copyright © 2022 JCTrustYourself. All rights reserved.
 //
 
-#import "JCSpecialFieldUseView.h"
+#import "JCSpecialFieldUseViewTest2.h"
 
-
-@implementation JCSpecialFieldUseView
-
-
-- (void)setupUI{
-    self.backgroundColor = self.bgColor;
-    self.layer.cornerRadius = self.cornerRadius;
-    self.layer.borderWidth = self.borderWidth;
-    self.layer.borderColor = self.borderColor.CGColor;
-}
+@implementation JCSpecialFieldUseViewTest2
 
 - (void)setBgColor:(UIColor *)bgColor{
     self.backgroundColor = bgColor;
@@ -33,7 +24,6 @@
 - (void)setBorderWidth:(CGFloat)borderWidth{
     self.layer.borderWidth = borderWidth;
 }
-
 
 
 

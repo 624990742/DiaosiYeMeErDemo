@@ -10,6 +10,7 @@
 #import "JCSpecialFieldUseView.h"
 @interface JCSpecialFieldUseController ()
 @property (weak, nonatomic) IBOutlet UIView *customView;
+@property (weak, nonatomic) IBOutlet UILabel *test1TipLabel;
 
 @end
 
@@ -22,6 +23,7 @@
     [testView makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.equalTo(self.customView);
     }];
+    [self.view insertSubview:self.test1TipLabel aboveSubview:testView];
 }
 
 /*

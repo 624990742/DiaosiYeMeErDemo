@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCSpecialFieldUseController">
             <connections>
                 <outlet property="customView" destination="55Q-go-Iiq" id="Jfg-c6-3i0"/>
+                <outlet property="test1TipLabel" destination="XMF-PS-GId" id="5QS-Ik-Fvh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,17 +21,61 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55Q-go-Iiq">
-                    <rect key="frame" x="30" y="94" width="354" height="718"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55Q-go-Iiq" userLabel="test1">
+                    <rect key="frame" x="30" y="54" width="354" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Hc9-aA-dUK"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBInspectable关键字的使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMF-PS-GId">
+                    <rect key="frame" x="103" y="193.5" width="208" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSU-Lw-8CZ" userLabel="teste2" customClass="JCSpecialFieldUseViewTest2">
+                    <rect key="frame" x="30" y="364" width="354" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IB_DESIGNABLE关键字的使用" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-bN-fly">
+                            <rect key="frame" x="62" y="140" width="230" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstItem="Mab-bN-fly" firstAttribute="centerY" secondItem="rSU-Lw-8CZ" secondAttribute="centerY" id="5Ff-Zb-Uke"/>
+                        <constraint firstAttribute="height" constant="300" id="RbW-SC-woG"/>
+                        <constraint firstItem="Mab-bN-fly" firstAttribute="centerX" secondItem="rSU-Lw-8CZ" secondAttribute="centerX" id="YbE-GY-tLh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" red="0.21176470589999999" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="55Q-go-Iiq" secondAttribute="bottom" constant="50" id="YfJ-lL-Glb"/>
+                <constraint firstItem="rSU-Lw-8CZ" firstAttribute="trailing" secondItem="55Q-go-Iiq" secondAttribute="trailing" id="6AA-Vw-yxn"/>
+                <constraint firstItem="XMF-PS-GId" firstAttribute="centerX" secondItem="55Q-go-Iiq" secondAttribute="centerX" id="Okx-rT-WsP"/>
                 <constraint firstItem="55Q-go-Iiq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="abc-mc-Gcr"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="55Q-go-Iiq" secondAttribute="trailing" constant="30" id="cqP-KO-owp"/>
-                <constraint firstItem="55Q-go-Iiq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="ymv-EX-TGP"/>
+                <constraint firstItem="rSU-Lw-8CZ" firstAttribute="leading" secondItem="55Q-go-Iiq" secondAttribute="leading" id="iAP-Uq-fpr"/>
+                <constraint firstItem="rSU-Lw-8CZ" firstAttribute="top" secondItem="55Q-go-Iiq" secondAttribute="bottom" constant="10" id="n3Z-Wo-xab"/>
+                <constraint firstItem="XMF-PS-GId" firstAttribute="centerY" secondItem="55Q-go-Iiq" secondAttribute="centerY" id="yQx-J7-TTl"/>
+                <constraint firstItem="55Q-go-Iiq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="ymv-EX-TGP"/>
             </constraints>
             <point key="canvasLocation" x="132" y="46"/>
         </view>
@@ -38,6 +83,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
