@@ -23,6 +23,7 @@
 #import "JCSummaryTableVC.h"
 #import "UINavigationBar+JCNavigationBarHandle.h"
 #import "JCProgressBarVC.h"
+#import "JCSpecialFieldUseController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -49,6 +50,7 @@
         @"多线程NSBlockOperation":[[JCQueueViewController alloc] init],
         @"web 交互":[[JCtestVCViewController alloc] init],
         @"自定义进度条":[[JCProgressBarVC alloc] init],
+        @"特殊关键字的使用方法":[[JCSpecialFieldUseController alloc] init]
     };
 }
 
@@ -81,8 +83,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
- 
-    [self.navigationController pushViewController:[self.allVCs objectForKey:self.dataScource[indexPath.row]] animated:YES];
+  [self.navigationController pushViewController:[self.allVCs objectForKey:self.dataScource[indexPath.row]] animated:YES];
 }
 
 

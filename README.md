@@ -7,4 +7,5 @@ DiaosiYeMeErDemo
 - 3.手势的基本使用总结demo
 - 4.UISearchBar占位符居左格式的demo
 - 5.橡皮擦功能demo
+- 6.进度条绘制
  

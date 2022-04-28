@@ -173,6 +173,10 @@
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
 		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
+		59914D35281A286800DA979F /* JCSpecialFieldUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D33281A286800DA979F /* JCSpecialFieldUseController.m */; };
+		59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */; };
+		59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */; };
+		59914D3E281A2CFB00DA979F /* JCSpecialFieldUseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */; };
 		59D7A760281920AC00804EF7 /* JCProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */; };
 		59D7A761281920AC00804EF7 /* JCProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */; };
 		59D7A76428192B5000804EF7 /* JCCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A76328192B5000804EF7 /* JCCanvasViewController.m */; };
@@ -531,6 +535,12 @@
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
 		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
 		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
+		59914D32281A286800DA979F /* JCSpecialFieldUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseController.h; sourceTree = "<group>"; };
+		59914D33281A286800DA979F /* JCSpecialFieldUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseController.m; sourceTree = "<group>"; };
+		59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseController.xib; sourceTree = "<group>"; };
+		59914D38281A28A600DA979F /* JCSpecialFieldUseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseView.h; sourceTree = "<group>"; };
+		59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseView.m; sourceTree = "<group>"; };
+		59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseView.xib; sourceTree = "<group>"; };
 		59D7A75D281920AC00804EF7 /* JCProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCProgressBarVC.h; sourceTree = "<group>"; };
 		59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCProgressBarVC.m; sourceTree = "<group>"; };
 		59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCProgressBarVC.xib; sourceTree = "<group>"; };
@@ -1036,6 +1046,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				59914D30281A281400DA979F /* SpecialFieldUse */,
 				592DEC242817FAA3000091F0 /* JCProgressBar */,
 				59114D6527EC503500CCD3CF /* GestureSummary */,
 				59FB63EF27C87F6E00837160 /* JCQueue */,
@@ -1497,6 +1508,35 @@
 			path = JCProgressBar;
 			sourceTree = "<group>";
 		};
+		59914D30281A281400DA979F /* SpecialFieldUse */ = {
+			isa = PBXGroup;
+			children = (
+				59914D37281A286B00DA979F /* View */,
+				59914D31281A284F00DA979F /* Controller */,
+			);
+			path = SpecialFieldUse;
+			sourceTree = "<group>";
+		};
+		59914D31281A284F00DA979F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59914D32281A286800DA979F /* JCSpecialFieldUseController.h */,
+				59914D33281A286800DA979F /* JCSpecialFieldUseController.m */,
+				59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59914D37281A286B00DA979F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59914D38281A28A600DA979F /* JCSpecialFieldUseView.h */,
+				59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */,
+				59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		59D7A75B2819201D00804EF7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1662,6 +1702,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */,
 				32768AB625502BDE0082A256 /* LICENSE in Resources */,
 				32419F5A2497118A0019B54D /* index.html in Resources */,
 				3AB50AE41FC4817B0081CD33 /* LaunchScreen.storyboard in Resources */,
@@ -1669,6 +1710,7 @@
 				3ACA50061FCC6673006D5DAB /* images.xcassets in Resources */,
 				3AB50AE11FC4817B0081CD33 /* Assets.xcassets in Resources */,
 				3AB50ADF1FC4817B0081CD33 /* Main.storyboard in Resources */,
+				59914D3E281A2CFB00DA979F /* JCSpecialFieldUseView.xib in Resources */,
 				59D7A761281920AC00804EF7 /* JCProgressBarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1807,6 +1849,7 @@
 				32768A7625502BDD0082A256 /* NSObject+YYModel.m in Sources */,
 				329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */,
 				32F8E39423B0AD05009F9041 /* NSString+JCMethond.m in Sources */,
+				59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */,
 				32768A7425502BDD0082A256 /* YYAnimatedImageView.m in Sources */,
 				32768A9425502BDE0082A256 /* UIView+YYAdd.m in Sources */,
 				329F722D235C3F1E00D2644B /* JCMASExampleLayoutGuideViewController.m in Sources */,
@@ -1859,6 +1902,7 @@
 				32768A9825502BDE0082A256 /* UIControl+YYAdd.m in Sources */,
 				32768AAF25502BDE0082A256 /* YYDispatchQueuePool.m in Sources */,
 				59114DA527EC518C00CCD3CF /* JCCheckStateOneVC.m in Sources */,
+				59914D35281A286800DA979F /* JCSpecialFieldUseController.m in Sources */,
 				32768A7E25502BDD0082A256 /* YYTextLine.m in Sources */,
 				3AB50ADC1FC4817B0081CD33 /* ViewController.m in Sources */,
 				3ACA4FFD1FCC59E3006D5DAB /* CustomButtonVC.m in Sources */,
