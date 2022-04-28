@@ -1,0 +1,163 @@
+1.可以通过以下语法修改变量名称
+@implementation
+@synthesize dataScource = _myDataArr;
+@end
+
+2.如果不想让编译器自动合成存取方法，自己实现的话需要通过@dynamic关键字来阻止。
+@implementation ViewController
+@dynamic dataScource;
+@end
+
+3.属性是用于封装数据的，而数据则要有“具体的所有权语义”。
+assign：只会执行针对“纯量类型”（例如CGFloat等）的简单复制操作。
+strong：此特质表明属性定义了一种“拥有关系”。为这种属性设置新值时，设置方法会先保留新值，并释放旧值，然后在将新值设置上去。
+weak：“非拥有关系”设置新值时候即不保留新值，也不释放旧值。在属性所指的对象遭到摧毁时候，属性值也会清空（nil out）。
+unsafe_unretained 与assign相同，但适用于“对象类型（object type）”该特质表达一种“非拥有关系”（“不保留”，unretained），当目标对象遭到摧毁时，属性值不会自动清空（“不安全”，unsafe）与weak的区别。
+copy：与strong类似。设置方法的时候不保留新值，将其“拷贝”。经常拿来修饰在NSString *类型，防止因为传递方法的新值指向一个NSMutableString类的实例，在不知情的情况下被修改。只要属性所用的对象是“可变的”就应该在设置新属性的时候拷贝一份。
+
+4.方法名
+getter=<name>给getter方法加前缀is的正确写法：
+@property(nonatomic,getter=isOpen) BOOL open;
+
+setter=<name>如果自己实现存取方法，应该保证其具备相关属性所声明的特质。
+
+@interface testDmo:NSManagedObject
+
+@property(copy) NSString *testNameOne;
+@property(copy) NSString *testNameTwo;
+- (id)initWithTestNameOne:(NSString *)testNameOne
+testNameTwo:(NSString *)testNameTwo;
+
+@end
+
+
+@implementation  testDmo
+
+- (id)initWithTestNameOne:(NSString *)testNameOne testNameTwo:(NSString *)testNameTwo{
+if (self= [super init]) {
+_testNameOne = [testNameOne copy];
+_testNameTwo = [testNameTwo copy];
+}
+return self;
+}
+@end
+
+5.atomic,nomatomic区别？
+atomic 会通过锁定机制来确保其操作的原子性。
+例如：如果两个线程读写同一个属性，那么不论何时，总能看到有效的属性值。
+若不加锁（nomatomic）的话若一个线程正在改写某个属性的时候，另一个线程可能会忽然闯进来，把没有修改好的属性值读取出来，发生这种情况时，线程读到的属性可能不对。
+
+ios开发中使用经常使用“nomatomic”来修饰的原因：
+使用同步锁的开销比较大，会影响性能问题。所以一般并不要求属性必须是“原子的”，因为这并不能保证线程安全。若要实现“线程安全”的操作，需要采用更深层次的锁定机制。
+开发ios一般会使用“nomatomic”，但是开发Mac OS X陈序时，使用“atomic”不会用性能瓶颈。 
+
+
+6.在对象内部尽量直接访问实例变量
+区别：
+<1.直接访问成员变量要比通过@property生成的属性速度快,因为编译器会直接访问保存对象实例变量的那快内存。
+<2.直接方法实例变量，不会生成getter和setter方法。例如：在arc的情况下，访问一个声明copy的属性，并不会拷贝属性，只会保留新值并释放旧值。
+<3.属性可以方便断点调试，直接访问实例变量不会触发kvo。
+总结：
+  <1.在写入实例变量时，尽可能使用声明属性的方式，读取的值的时候，可以采用成员变量的方式读取。
+  <2.在对象的内部读取数据时应该通过实例变量来读写，写入数据的时候则通过属性来写。
+  <3.在初始化以及dealloc方法中，尽可能使用实例变量来读写数据。
+  <4.有时候会使用懒加载初始化配置某份数据，这种情况下需要属性读取。
+
+7.等同性
+<1.“==”操作符 比较的是两个指针本身，而不是所指向的对象。
+<2.NSObject中的 “isEqual”是比较两个对象的等同性。字符串使用“isEqualToString”要比“isEqual”快
+<3.如果两个对象相等，则哈希值（hash）也相等。但是两个哈希值相等的对象未必相等。
+比较两个哈希值的方法：
+方法一：(消耗性能)
+- (NSUInteger)hash{
+NSString *temp =[NSString stringWithFormat:@"%:%@",_firtname,_fullname];
+return [temp hash];
+}
+
+方法二：(推荐使用)
+-(NSUInteger)hash{
+NSUInteger firstnme = [_firtname hash];
+NSUInteger fullname = [_fullname hash];
+return firstnme ^ fullname;
+}
+
+如果两个对象属于同一个类，比较对象是否相等必须比较“指针”和“实例变量”相等才是真正的相等。
+- (BOOL)isEqualDog:(Dogmodel *)otherDog{
+if (self == otherDog) return YES;
+if (![_firtname isEqualToString:otherDog.firtname]) return NO;
+return YES;
+}
+
+如果两个对象不是同一个类就用系统的方法。
+- (BOOL)isEqual:(id)object{
+if ([self class] == [object class]) {
+return [self isEqualDog:object]
+}
+return [super isEqual:object];
+}
+
+8.分类 (Category)
+   分类的优点：
+   <1.声明私有方法
+   <2.分解体积庞大的类文件
+   <3.把framework的私有方法公开
+   <4.模拟多继承（另外可以模拟多继承的还有protocol）
+
+Category 是表示一个指向分类的结构体的指针，其定义如下：
+//Category 源码
+typedef struct objc_category *Category;
+struct objc_category {
+  char *category_name                          OBJC2_UNAVAILABLE; // 分类名
+  char *class_name                             OBJC2_UNAVAILABLE; // 分类所属的类名
+  struct objc_method_list *instance_methods    OBJC2_UNAVAILABLE; // 实例方法列表
+  struct objc_method_list *class_methods       OBJC2_UNAVAILABLE; // 类方法列表
+  struct objc_protocol_list *protocols         OBJC2_UNAVAILABLE; // 分类所实现的协议列表
+}
+
+结构体：主要包含了分类定义的实例方法与类方法，其中instance_methods 列表是 objc_class 中方法列表的一个子集，而class_methods列表是元类方法列表的一个子集。
+
+实现原理
+
+<1.我们不主动引入 Category 的头文件，Category 中的方法都会被添加进主类中。我们可以通过 - performSelector: 等方式对 Category 中的相应方法进行调用：
+a)将 Category 和它的主类（或元类）注册到哈希表中；
+b)如果主类（或元类）已实现，那么重建它的方法列表。
+<2.在这里分了两种情况进行处理：
+a)Category 中的实例方法和属性被整合到主类中；
+b)类方法则被整合到元类中
+c)对协议的处理比较特殊，Category 中的协议被同时整合到了主类和元类中。
+<3.最终都是通过调用 staticvoid remethodizeClass(Class cls) 函数来重新整理类的数据的。
+
+
+9.分类的特点
+（1）、运行时决议，可以为系统类添加分类
+<1.分类是用于给原有类添加方法的,因为分类的结构体指针中，没有属性列表，只有方法列表。
+  原则上讲它只能添加方法, 不能添加属性(成员变量),实际上可以通过其它方式添加属性 ;
+<2.分类中的可以写@property, 但不会生成setter/getter方法, 也不会生成实现以及私有的成员变量，会编译通过，但是引用变量会报错;
+<3.如果分类中有和原有类同名的方法, 会优先调用分类中的方法, 就是说会忽略原有类的方法，同名方法调用的优先级为 分类 > 本类 > 父类；
+<4.如果多个分类中都有和原有类中同名的方法, 那么调用该方法的时候执行谁由编译器决定；编译器会执行最后一个参与编译的分类中的方法。
+<5.运行时决议
+<6.同名分类方法生效取决于编译顺序名字相同的分类会引起编译报错
+
+（2）、分类能添加成员变量吗？
+不能。只能通过关联对象(objc_setAssociatedObject)来模拟实现成员变量，但其实质是关联内容，所有对象的关联内容都放在同一个全局容器哈希表中:AssociationsHashMap,由AssociationsManager统一管理。
+
+（3）、如果声明了两个同名的分类会怎样?
+会报错，所以第三方的分类，一般都带有命名前缀
+
+10.扩展
+<1.声明私有属性、私有成员变量、私有方法
+<2.编译时决议 ，只以声明存在，寄生于宿主类.m中，不能为系统类添加扩展。
+
+11.分类、扩展区别？
+<1.分类中原则上只能增加方法（能添加属性的的原因只是通过runtime解决无setter/getter的问题而已）
+<2.类扩展不仅可以增加方法，还可以增加实例变量（或者属性），只是该实例变量默认是@private类型的（
+用范围只能在自身类，而不是子类或其他地方）
+<3.类扩展中声明的方法没被实现，编译器会报警，但是类别中的方法没被实现编译器是不会有任何警告的。这是因为类扩展是在编译阶段被添加到类中，而类别是在运行时添加到类中。
+<4.扩展不能像"类别"那样拥有独立的实现部分（@implementation部分），也就是说，类扩展所声明的方法必须依托"对应类的实现部分"来实现。
+<5.定义在 .m 文件中的类扩展方法为私有的，定义在 .h 文件（头文件）中的类扩展方法为公有的。类扩展是在 .m 文件中声明私有方法的非常好的方式。
+12.代理
+以@protocol形式体现，一般是一对一传递。
+一般以weak关键词以规避循环引用
+
+
+
