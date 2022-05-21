@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NSString+JCMethond.h"
 #import "UINavigationBar+JCNavigationBarHandle.h"
+#import <StoreKit.h>
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
 @end
@@ -17,6 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    UIWindowScene *scene = (UIWindowScene *)[[UIApplication sharedApplication].connectedScenes.allObjects firstObject];
+    SKOverlayAppConfiguration *config = [[SKOverlayAppConfiguration alloc] initWithAppIdentifier:@"Your app ID" position:SKOverlayPositionBottomRaised];
+    SKOverlay *overlay = [[SKOverlay alloc] initWithConfiguration:config];
+    overlay.delegate = self; // 添加代理后可以监听弹窗的弹出和消失，可以在代理内添加自己的逻辑。
+    [overlay presentInScene:scene];
     
     return YES;
 }

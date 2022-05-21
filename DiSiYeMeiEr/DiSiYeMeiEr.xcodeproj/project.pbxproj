@@ -1607,6 +1607,7 @@
 				3AB50AD11FC4817B0081CD33 /* Frameworks */,
 				3AB50AD21FC4817B0081CD33 /* Resources */,
 				B1F0D419429CD6ADC4D0DB7F /* [CP] Embed Pods Frameworks */,
+				457DDCB0933115BECF4534B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1645,6 +1646,7 @@
 				3AB50AF41FC4817B0081CD33 /* Frameworks */,
 				3AB50AF51FC4817B0081CD33 /* Resources */,
 				57B7E49103B9F0CA675C26F1 /* [CP] Embed Pods Frameworks */,
+				5577B1021EDF04DBD2B56D95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1737,6 +1739,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		457DDCB0933115BECF4534B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr-resources.sh",
+				"${PODS_ROOT}/YDADSDK/YDADSDK/YDSDK/YDResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YDResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5577B1021EDF04DBD2B56D95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests-resources.sh",
+				"${PODS_ROOT}/YDADSDK/YDADSDK/YDSDK/YDResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YDResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		57B7E49103B9F0CA675C26F1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
