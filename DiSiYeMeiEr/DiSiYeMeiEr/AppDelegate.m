@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "NSString+JCMethond.h"
 #import "UINavigationBar+JCNavigationBarHandle.h"
-#import <StoreKit.h>
+#import "JCTool.h"
+//#import <StoreKit.h>
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
 @end
@@ -19,13 +20,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+//    [JCTool createTestData];
+//    [JCTool test333];
     
-    UIWindowScene *scene = (UIWindowScene *)[[UIApplication sharedApplication].connectedScenes.allObjects firstObject];
-    SKOverlayAppConfiguration *config = [[SKOverlayAppConfiguration alloc] initWithAppIdentifier:@"Your app ID" position:SKOverlayPositionBottomRaised];
-    SKOverlay *overlay = [[SKOverlay alloc] initWithConfiguration:config];
-    overlay.delegate = self; // 添加代理后可以监听弹窗的弹出和消失，可以在代理内添加自己的逻辑。
-    [overlay presentInScene:scene];
+    NSDictionary *result = @{@"testKey":@""};
+    if([result objectForKey:@"testKey"]) {
+        NSLog(@"yourKey有这个值");
+    } else {
+        NSLog(@"yourKey没有这个值");
+    }
     
+    if ([[result allKeys] containsObject:@"testKey"]) {
+        NSLog(@"allKeys有这个值");
+    }else{
+        NSLog(@"allKeys没有这个值");
+    }
+    
+    
+   
     return YES;
 }
 

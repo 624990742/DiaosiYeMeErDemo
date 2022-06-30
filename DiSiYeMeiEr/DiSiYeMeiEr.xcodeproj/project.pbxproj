@@ -173,6 +173,7 @@
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
 		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
+		597157CD2859B71D004B6260 /* JCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 597157CC2859B71D004B6260 /* JCTool.m */; };
 		59914D35281A286800DA979F /* JCSpecialFieldUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D33281A286800DA979F /* JCSpecialFieldUseController.m */; };
 		59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */; };
 		59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */; };
@@ -536,6 +537,8 @@
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
 		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
 		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
+		597157CB2859B71D004B6260 /* JCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTool.h; sourceTree = "<group>"; };
+		597157CC2859B71D004B6260 /* JCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTool.m; sourceTree = "<group>"; };
 		59914D32281A286800DA979F /* JCSpecialFieldUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseController.h; sourceTree = "<group>"; };
 		59914D33281A286800DA979F /* JCSpecialFieldUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseController.m; sourceTree = "<group>"; };
 		59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseController.xib; sourceTree = "<group>"; };
@@ -1317,6 +1320,7 @@
 			children = (
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
+				597157CA2859B70C004B6260 /* Tool */,
 				329F7223235C3A9500D2644B /* Class */,
 				59114D6927EC507200CCD3CF /* Base */,
 				3276894825501FB70082A256 /* Lib */,
@@ -1509,6 +1513,15 @@
 				59D7A75B2819201D00804EF7 /* Controller */,
 			);
 			path = JCProgressBar;
+			sourceTree = "<group>";
+		};
+		597157CA2859B70C004B6260 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				597157CB2859B71D004B6260 /* JCTool.h */,
+				597157CC2859B71D004B6260 /* JCTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		59914D30281A281400DA979F /* SpecialFieldUse */ = {
@@ -2030,6 +2043,7 @@
 				32D80E7B257FA8530054C3AE /* BackupTestMessage.m in Sources */,
 				59114DAA27EC518C00CCD3CF /* JCUISwipeGestureRecognizerViewController.m in Sources */,
 				59114DA327EC518C00CCD3CF /* JCCheckStateThreeVC.m in Sources */,
+				597157CD2859B71D004B6260 /* JCTool.m in Sources */,
 				59D7A76428192B5000804EF7 /* JCCanvasViewController.m in Sources */,
 				59114D6F27EC514E00CCD3CF /* JCBaseController.m in Sources */,
 				59114D6C27EC508B00CCD3CF /* JCBaseNavigationController.m in Sources */,
