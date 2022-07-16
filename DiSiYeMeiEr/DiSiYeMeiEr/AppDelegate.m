@@ -10,6 +10,7 @@
 #import "NSString+JCMethond.h"
 #import "UINavigationBar+JCNavigationBarHandle.h"
 #import "JCTool.h"
+#import "JCAlgorithmTool.h"
 //#import <StoreKit.h>
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
@@ -20,26 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [JCTool createTestData];
-//    [JCTool test333];
+
     
-    NSDictionary *result = @{@"testKey":@""};
-    if([result objectForKey:@"testKey"]) {
-        NSLog(@"yourKey有这个值");
-    } else {
-        NSLog(@"yourKey没有这个值");
-    }
-    
-    if ([[result allKeys] containsObject:@"testKey"]) {
-        NSLog(@"allKeys有这个值");
-    }else{
-        NSLog(@"allKeys没有这个值");
-    }
-    
-    
+    [JCAlgorithmTool testDemo];
+
    
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
