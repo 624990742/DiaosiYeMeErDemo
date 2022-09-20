@@ -11,7 +11,12 @@
 @implementation JCTestObj
 static   JCTestObj *testObj = nil;
 
-
+- (instancetype)init{
+    if (self) {
+        NSLog(@"%p",self);
+    }
+    return self;
+}
 
 
 

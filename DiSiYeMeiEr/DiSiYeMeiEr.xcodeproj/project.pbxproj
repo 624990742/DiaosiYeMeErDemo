@@ -173,12 +173,15 @@
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
 		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
+		593BAB8428839E0B00921DEE /* JCPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 593BAB8328839E0B00921DEE /* JCPhone.m */; };
 		597157CD2859B71D004B6260 /* JCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 597157CC2859B71D004B6260 /* JCTool.m */; };
 		59914D35281A286800DA979F /* JCSpecialFieldUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D33281A286800DA979F /* JCSpecialFieldUseController.m */; };
 		59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */; };
 		59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */; };
 		59914D3E281A2CFB00DA979F /* JCSpecialFieldUseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */; };
 		59914D41281A36D100DA979F /* JCSpecialFieldUseViewTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */; };
+		599A5FCB28B9E383000F5E99 /* JCTestStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A5FCA28B9E383000F5E99 /* JCTestStudent.m */; };
+		599A5FCE28B9E472000F5E99 /* JCNSPredicateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */; };
 		59C4E0A9287D61370065E18B /* JCAlgorithmTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4E0A8287D61370065E18B /* JCAlgorithmTool.m */; };
 		59D7A760281920AC00804EF7 /* JCProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */; };
 		59D7A761281920AC00804EF7 /* JCProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */; };
@@ -538,6 +541,8 @@
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
 		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
 		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
+		593BAB8228839E0B00921DEE /* JCPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPhone.h; sourceTree = "<group>"; };
+		593BAB8328839E0B00921DEE /* JCPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPhone.m; sourceTree = "<group>"; };
 		597157CB2859B71D004B6260 /* JCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTool.h; sourceTree = "<group>"; };
 		597157CC2859B71D004B6260 /* JCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTool.m; sourceTree = "<group>"; };
 		59914D32281A286800DA979F /* JCSpecialFieldUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseController.h; sourceTree = "<group>"; };
@@ -548,6 +553,10 @@
 		59914D3D281A2CFB00DA979F /* JCSpecialFieldUseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseView.xib; sourceTree = "<group>"; };
 		59914D3F281A36D100DA979F /* JCSpecialFieldUseViewTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseViewTest2.h; sourceTree = "<group>"; };
 		59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseViewTest2.m; sourceTree = "<group>"; };
+		599A5FC928B9E383000F5E99 /* JCTestStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTestStudent.h; sourceTree = "<group>"; };
+		599A5FCA28B9E383000F5E99 /* JCTestStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestStudent.m; sourceTree = "<group>"; };
+		599A5FCC28B9E472000F5E99 /* JCNSPredicateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCNSPredicateTool.h; sourceTree = "<group>"; };
+		599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCNSPredicateTool.m; sourceTree = "<group>"; };
 		59C4E0A7287D61370065E18B /* JCAlgorithmTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAlgorithmTool.h; sourceTree = "<group>"; };
 		59C4E0A8287D61370065E18B /* JCAlgorithmTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAlgorithmTool.m; sourceTree = "<group>"; };
 		59D7A75D281920AC00804EF7 /* JCProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCProgressBarVC.h; sourceTree = "<group>"; };
@@ -1055,6 +1064,7 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				599A5FC828B9E361000F5E99 /* 谓词使用 */,
 				59914D30281A281400DA979F /* SpecialFieldUse */,
 				592DEC242817FAA3000091F0 /* JCProgressBar */,
 				59114D6527EC503500CCD3CF /* GestureSummary */,
@@ -1297,6 +1307,8 @@
 		3AB50ACB1FC4817B0081CD33 = {
 			isa = PBXGroup;
 			children = (
+				593BAB8228839E0B00921DEE /* JCPhone.h */,
+				593BAB8328839E0B00921DEE /* JCPhone.m */,
 				327FFE5525E5F47D00EEC87E /* JCTestObj.h */,
 				327FFE5625E5F47D00EEC87E /* JCTestObj.m */,
 				3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */,
@@ -1557,6 +1569,17 @@
 				59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		599A5FC828B9E361000F5E99 /* 谓词使用 */ = {
+			isa = PBXGroup;
+			children = (
+				599A5FC928B9E383000F5E99 /* JCTestStudent.h */,
+				599A5FCA28B9E383000F5E99 /* JCTestStudent.m */,
+				599A5FCC28B9E472000F5E99 /* JCNSPredicateTool.h */,
+				599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */,
+			);
+			path = "谓词使用";
 			sourceTree = "<group>";
 		};
 		59C4E0A6287D61160065E18B /* 算法 */ = {
@@ -1917,6 +1940,7 @@
 				320D61D2239781C1005FFFBA /* JCSpeciesEmployeeTypeDeveloper.m in Sources */,
 				32768A7625502BDD0082A256 /* NSObject+YYModel.m in Sources */,
 				329F722A235C3B5600D2644B /* JCMasExampleListViewController.m in Sources */,
+				599A5FCE28B9E472000F5E99 /* JCNSPredicateTool.m in Sources */,
 				32F8E39423B0AD05009F9041 /* NSString+JCMethond.m in Sources */,
 				59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */,
 				32768A7425502BDD0082A256 /* YYAnimatedImageView.m in Sources */,
@@ -1997,6 +2021,7 @@
 				32768AA125502BDE0082A256 /* NSTimer+YYAdd.m in Sources */,
 				32768A9625502BDE0082A256 /* UIGestureRecognizer+YYAdd.m in Sources */,
 				32768AC625502DAE0082A256 /* HBTextChangeModel.m in Sources */,
+				599A5FCB28B9E383000F5E99 /* JCTestStudent.m in Sources */,
 				320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */,
 				32768A6A25502BDD0082A256 /* YYWebImageManager.m in Sources */,
 				32768A7225502BDD0082A256 /* MKAnnotationView+YYWebImage.m in Sources */,
@@ -2067,6 +2092,7 @@
 				592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
 				32768A9F25502BDE0082A256 /* NSThread+YYAdd.m in Sources */,
+				593BAB8428839E0B00921DEE /* JCPhone.m in Sources */,
 				32768A9925502BDE0082A256 /* UIFont+YYAdd.m in Sources */,
 				32768A8525502BDE0082A256 /* NSParagraphStyle+YYText.m in Sources */,
 				3AA4CEB81FC722860071A499 /* TextFilterAbilityVC.m in Sources */,

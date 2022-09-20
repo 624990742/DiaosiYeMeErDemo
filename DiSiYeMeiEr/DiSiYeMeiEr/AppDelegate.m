@@ -11,6 +11,8 @@
 #import "UINavigationBar+JCNavigationBarHandle.h"
 #import "JCTool.h"
 #import "JCAlgorithmTool.h"
+#import "JCPhone.h"
+#import "JCNSPredicateTool.h"
 //#import <StoreKit.h>
 @interface AppDelegate ()
 @property(nonatomic,strong)NSMutableArray *testArr;
@@ -21,11 +23,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-
+    JCNSPredicateTool *tool = [[JCNSPredicateTool alloc] init];
+    [tool test1];
     
-    [JCAlgorithmTool testDemo];
-
-   
+    
     return YES;
 }
 

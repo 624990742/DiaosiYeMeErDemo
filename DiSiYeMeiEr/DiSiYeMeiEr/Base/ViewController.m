@@ -50,7 +50,8 @@
         @"多线程NSBlockOperation":[[JCQueueViewController alloc] init],
         @"web 交互":[[JCtestVCViewController alloc] init],
         @"自定义进度条":[[JCProgressBarVC alloc] init],
-        @"特殊关键字的使用方法":[[JCSpecialFieldUseController alloc] init]
+        @"特殊关键字的使用方法":[[JCSpecialFieldUseController alloc] init],
+        @"11测试11": [[UIViewController alloc] init]
     };
 }
 
@@ -79,8 +80,40 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     cell.textLabel.text = self.dataScource[indexPath.row];
+    if ([cell.textLabel.text isEqualToString:@"11测试11"]) {
+        cell.textLabel.attributedText = [self setupAttributeString:@"11测试11" rangeText:@"11" textColor:[UIColor redColor]];
+    }
   return cell;
 }
+
+
+
+- (NSMutableAttributedString *)setupAttributeString:(NSString *)text rangeText:(NSString *)rangeText textColor:(UIColor *)color  {
+
+    NSRange hightlightTextRange = [text rangeOfString:rangeText];
+
+    NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc] initWithString:text];
+
+    if (hightlightTextRange.length > 0) {
+
+        [attributeStr addAttribute:NSForegroundColorAttributeName
+
+                             value:color
+
+                             range:hightlightTextRange];
+
+        [attributeStr addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:14.0f] range:hightlightTextRange];
+
+        return attributeStr;
+
+    }else {
+
+        return [rangeText copy];
+
+    }
+
+}
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   [self.navigationController pushViewController:[self.allVCs objectForKey:self.dataScource[indexPath.row]] animated:YES];
