@@ -115,6 +115,31 @@
 //    }
 }
 
+- (NSString *)test2{
+    NSString *text = @"18710172063a";
+    NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789\b"];
+    text = [text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    if ([text rangeOfCharacterFromSet:[characterSet invertedSet]].location != NSNotFound) {
+        NSLog(@"%@",text);
+//        return text;
+    }
+    // 如果是电话号码格式化，需要添加这三行代码
+    NSMutableString *temString = [NSMutableString stringWithString:text];
+    [temString insertString:@" " atIndex:0];
+    text = temString;
+    NSString *newString = @"";
+    while (text.length > 0) {
+        NSString *subString = [text substringToIndex:MIN(text.length, 4)];
+        newString = [newString stringByAppendingString:subString];
+        if (subString.length == 4) {
+            newString = [newString stringByAppendingString:@" "];
+        }
+        text = [text substringFromIndex:MIN(text.length, 4)];
+    }
+    newString = [newString stringByTrimmingCharactersInSet:[characterSet invertedSet]];
+    NSLog(@"新格式-->%@",newString);
+    return newString;
+}
 
 - (NSMutableArray *)testDataArr{
     if (!_testDataArr) {

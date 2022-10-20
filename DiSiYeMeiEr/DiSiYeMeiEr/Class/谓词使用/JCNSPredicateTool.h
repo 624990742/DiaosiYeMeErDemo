@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JCNSPredicateTool : NSObject
 +(void)test;
 -(void)test1;
+- (NSString *)test2;
 @end
 
 NS_ASSUME_NONNULL_END

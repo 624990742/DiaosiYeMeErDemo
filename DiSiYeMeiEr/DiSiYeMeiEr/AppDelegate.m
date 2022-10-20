@@ -24,8 +24,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     JCNSPredicateTool *tool = [[JCNSPredicateTool alloc] init];
-    [tool test1];
+//    [tool test1];
+    [tool test2];
     
+    
+    
+    
+
     
     return YES;
 }
