@@ -1,24 +1,20 @@
 PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.5.0)
-  - YDADSDK (2.16.12)
 
 DEPENDENCIES:
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.5.0)
-  - YDADSDK (~> 2.16.12)
 
 SPEC REPOS:
   trunk:
     - Masonry
     - MJRefresh
-    - YDADSDK
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  YDADSDK: 8b7e374e18e39b6b5e6d5862e606c68cbbae89a4
 
-PODFILE CHECKSUM: da4c50af7a7fd862b73c78d943e71564f27ea4f8
+PODFILE CHECKSUM: 7c30e1c73c2bc2f9c9b9ba7f44139abc5e3bd25a
 
 COCOAPODS: 1.11.2
