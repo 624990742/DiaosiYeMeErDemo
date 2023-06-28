@@ -29,4 +29,20 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
     return [predicate evaluateWithObject:self];
 }
+
+/** 读取本地文件转成json数据  */
+//- (id)readFileWithBundlFileName:(NSString *)fileName
+//                       fileType:(NSString *)fileType
+//{
+//    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
+//    NSString *content = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+////    NSData *JSONData = [JSONString dataUsingEncoding:NSUTF8StringEncoding];
+////    NSDictionary *responseJSON = nil;
+////    if (JSONData) {
+////        responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableContainers error:nil];
+////    }
+//    return responseJSON;
+//    
+//}
+
 @end

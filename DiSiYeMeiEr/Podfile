@@ -8,6 +8,8 @@ target 'DiSiYeMeiEr' do
 
   pod 'MJRefresh', '~> 3.5.0'
   pod 'Masonry', '~> 1.1.0'
+  #HTML
+  pod 'DTCoreText'
 #  pod 'YDADSDK','~>2.16.12'
 #  pod 'SDWebImage', '~>5.12.6'
   target 'DiSiYeMeiErTests' do

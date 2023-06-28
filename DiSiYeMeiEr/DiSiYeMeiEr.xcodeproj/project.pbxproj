@@ -173,8 +173,12 @@
 		59114DB327EC518C00CCD3CF /* JCPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DA127EC518C00CCD3CF /* JCPushViewController.m */; };
 		59114DB627EC51A400CCD3CF /* JCSummaryTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */; };
 		592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */; };
+		593A5EFD298B640E001857E6 /* TestHtmlJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 593A5EFC298B640E001857E6 /* TestHtmlJson.txt */; };
+		593A5F03298B6592001857E6 /* JCDTCoreTextDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593A5F01298B6592001857E6 /* JCDTCoreTextDemoController.m */; };
+		593A5F04298B6592001857E6 /* JCDTCoreTextDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593A5F02298B6592001857E6 /* JCDTCoreTextDemoController.xib */; };
 		593BAB8428839E0B00921DEE /* JCPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 593BAB8328839E0B00921DEE /* JCPhone.m */; };
 		597157CD2859B71D004B6260 /* JCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 597157CC2859B71D004B6260 /* JCTool.m */; };
+		5973EA1D29E7D32900BB8A0A /* JCCustomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5973EA1C29E7D32900BB8A0A /* JCCustomMenuView.m */; };
 		59914D35281A286800DA979F /* JCSpecialFieldUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D33281A286800DA979F /* JCSpecialFieldUseController.m */; };
 		59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */; };
 		59914D3A281A28A600DA979F /* JCSpecialFieldUseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D39281A28A600DA979F /* JCSpecialFieldUseView.m */; };
@@ -182,7 +186,9 @@
 		59914D41281A36D100DA979F /* JCSpecialFieldUseViewTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 59914D40281A36D100DA979F /* JCSpecialFieldUseViewTest2.m */; };
 		599A5FCB28B9E383000F5E99 /* JCTestStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A5FCA28B9E383000F5E99 /* JCTestStudent.m */; };
 		599A5FCE28B9E472000F5E99 /* JCNSPredicateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */; };
+		59B988EC29E7DBD500AF3D89 /* JCTestMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B988EB29E7DBD500AF3D89 /* JCTestMenuVC.m */; };
 		59C4E0A9287D61370065E18B /* JCAlgorithmTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4E0A8287D61370065E18B /* JCAlgorithmTool.m */; };
+		59D0C6D129F675B30060CFC5 /* JCCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D0C6D029F675B30060CFC5 /* JCCustomView.m */; };
 		59D7A760281920AC00804EF7 /* JCProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */; };
 		59D7A761281920AC00804EF7 /* JCProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */; };
 		59D7A76428192B5000804EF7 /* JCCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7A76328192B5000804EF7 /* JCCanvasViewController.m */; };
@@ -541,10 +547,16 @@
 		59114DB527EC51A400CCD3CF /* JCSummaryTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSummaryTableVC.m; sourceTree = "<group>"; };
 		592DEC212817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JCNavigationBarHandle.h"; sourceTree = "<group>"; };
 		592DEC222817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JCNavigationBarHandle.m"; sourceTree = "<group>"; };
+		593A5EFC298B640E001857E6 /* TestHtmlJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestHtmlJson.txt; sourceTree = "<group>"; };
+		593A5F00298B6592001857E6 /* JCDTCoreTextDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDTCoreTextDemoController.h; sourceTree = "<group>"; };
+		593A5F01298B6592001857E6 /* JCDTCoreTextDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCDTCoreTextDemoController.m; sourceTree = "<group>"; };
+		593A5F02298B6592001857E6 /* JCDTCoreTextDemoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCDTCoreTextDemoController.xib; sourceTree = "<group>"; };
 		593BAB8228839E0B00921DEE /* JCPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPhone.h; sourceTree = "<group>"; };
 		593BAB8328839E0B00921DEE /* JCPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPhone.m; sourceTree = "<group>"; };
 		597157CB2859B71D004B6260 /* JCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTool.h; sourceTree = "<group>"; };
 		597157CC2859B71D004B6260 /* JCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTool.m; sourceTree = "<group>"; };
+		5973EA1B29E7D32900BB8A0A /* JCCustomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCustomMenuView.h; sourceTree = "<group>"; };
+		5973EA1C29E7D32900BB8A0A /* JCCustomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCustomMenuView.m; sourceTree = "<group>"; };
 		59914D32281A286800DA979F /* JCSpecialFieldUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSpecialFieldUseController.h; sourceTree = "<group>"; };
 		59914D33281A286800DA979F /* JCSpecialFieldUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSpecialFieldUseController.m; sourceTree = "<group>"; };
 		59914D34281A286800DA979F /* JCSpecialFieldUseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCSpecialFieldUseController.xib; sourceTree = "<group>"; };
@@ -557,8 +569,12 @@
 		599A5FCA28B9E383000F5E99 /* JCTestStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestStudent.m; sourceTree = "<group>"; };
 		599A5FCC28B9E472000F5E99 /* JCNSPredicateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCNSPredicateTool.h; sourceTree = "<group>"; };
 		599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCNSPredicateTool.m; sourceTree = "<group>"; };
+		59B988EA29E7DBD500AF3D89 /* JCTestMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCTestMenuVC.h; sourceTree = "<group>"; };
+		59B988EB29E7DBD500AF3D89 /* JCTestMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTestMenuVC.m; sourceTree = "<group>"; };
 		59C4E0A7287D61370065E18B /* JCAlgorithmTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAlgorithmTool.h; sourceTree = "<group>"; };
 		59C4E0A8287D61370065E18B /* JCAlgorithmTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAlgorithmTool.m; sourceTree = "<group>"; };
+		59D0C6CF29F675B30060CFC5 /* JCCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCCustomView.h; sourceTree = "<group>"; };
+		59D0C6D029F675B30060CFC5 /* JCCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCCustomView.m; sourceTree = "<group>"; };
 		59D7A75D281920AC00804EF7 /* JCProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCProgressBarVC.h; sourceTree = "<group>"; };
 		59D7A75E281920AC00804EF7 /* JCProgressBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCProgressBarVC.m; sourceTree = "<group>"; };
 		59D7A75F281920AC00804EF7 /* JCProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCProgressBarVC.xib; sourceTree = "<group>"; };
@@ -1045,6 +1061,10 @@
 		329F7220235C390400D2644B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				593BAB8228839E0B00921DEE /* JCPhone.h */,
+				593BAB8328839E0B00921DEE /* JCPhone.m */,
+				327FFE5525E5F47D00EEC87E /* JCTestObj.h */,
+				327FFE5625E5F47D00EEC87E /* JCTestObj.m */,
 				3AB50AE21FC4817B0081CD33 /* LaunchScreen.storyboard */,
 				3AB50AE51FC4817B0081CD33 /* Info.plist */,
 				3AB50AE61FC4817B0081CD33 /* main.m */,
@@ -1064,6 +1084,9 @@
 		329F7223235C3A9500D2644B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				59B988E929E7DBB600AF3D89 /* menuDemo */,
+				593A5EFF298B656A001857E6 /* DTCoreTextDemo */,
+				593A5EFE298B6544001857E6 /* JCD */,
 				599A5FC828B9E361000F5E99 /* 谓词使用 */,
 				59914D30281A281400DA979F /* SpecialFieldUse */,
 				592DEC242817FAA3000091F0 /* JCProgressBar */,
@@ -1307,10 +1330,6 @@
 		3AB50ACB1FC4817B0081CD33 = {
 			isa = PBXGroup;
 			children = (
-				593BAB8228839E0B00921DEE /* JCPhone.h */,
-				593BAB8328839E0B00921DEE /* JCPhone.m */,
-				327FFE5525E5F47D00EEC87E /* JCTestObj.h */,
-				327FFE5625E5F47D00EEC87E /* JCTestObj.m */,
 				3AB50AD61FC4817B0081CD33 /* DiSiYeMeiEr */,
 				3AB50AEF1FC4817B0081CD33 /* DiSiYeMeiErTests */,
 				3AB50AFA1FC4817B0081CD33 /* DiSiYeMeiErUITests */,
@@ -1335,9 +1354,10 @@
 			children = (
 				3AB50AD71FC4817B0081CD33 /* AppDelegate.h */,
 				3AB50AD81FC4817B0081CD33 /* AppDelegate.m */,
+				59114D6927EC507200CCD3CF /* Base */,
+				593A5EF9298B63D2001857E6 /* TestRescource */,
 				597157CA2859B70C004B6260 /* Tool */,
 				329F7223235C3A9500D2644B /* Class */,
-				59114D6927EC507200CCD3CF /* Base */,
 				3276894825501FB70082A256 /* Lib */,
 				329F7221235C3A3D00D2644B /* Define */,
 				32F8E38E23B09269009F9041 /* Cateory */,
@@ -1530,6 +1550,32 @@
 			path = JCProgressBar;
 			sourceTree = "<group>";
 		};
+		593A5EF9298B63D2001857E6 /* TestRescource */ = {
+			isa = PBXGroup;
+			children = (
+				593A5EFC298B640E001857E6 /* TestHtmlJson.txt */,
+			);
+			path = TestRescource;
+			sourceTree = "<group>";
+		};
+		593A5EFE298B6544001857E6 /* JCD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JCD;
+			sourceTree = "<group>";
+		};
+		593A5EFF298B656A001857E6 /* DTCoreTextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5973EA1A29E7D31A00BB8A0A /* View */,
+				593A5F00298B6592001857E6 /* JCDTCoreTextDemoController.h */,
+				593A5F01298B6592001857E6 /* JCDTCoreTextDemoController.m */,
+				593A5F02298B6592001857E6 /* JCDTCoreTextDemoController.xib */,
+			);
+			path = DTCoreTextDemo;
+			sourceTree = "<group>";
+		};
 		597157CA2859B70C004B6260 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1538,6 +1584,15 @@
 				597157CC2859B71D004B6260 /* JCTool.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		5973EA1A29E7D31A00BB8A0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5973EA1B29E7D32900BB8A0A /* JCCustomMenuView.h */,
+				5973EA1C29E7D32900BB8A0A /* JCCustomMenuView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		59914D30281A281400DA979F /* SpecialFieldUse */ = {
@@ -1580,6 +1635,17 @@
 				599A5FCD28B9E472000F5E99 /* JCNSPredicateTool.m */,
 			);
 			path = "谓词使用";
+			sourceTree = "<group>";
+		};
+		59B988E929E7DBB600AF3D89 /* menuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				59B988EA29E7DBD500AF3D89 /* JCTestMenuVC.h */,
+				59B988EB29E7DBD500AF3D89 /* JCTestMenuVC.m */,
+				59D0C6CF29F675B30060CFC5 /* JCCustomView.h */,
+				59D0C6D029F675B30060CFC5 /* JCCustomView.m */,
+			);
+			path = menuDemo;
 			sourceTree = "<group>";
 		};
 		59C4E0A6287D61160065E18B /* 算法 */ = {
@@ -1759,9 +1825,11 @@
 				59914D36281A286800DA979F /* JCSpecialFieldUseController.xib in Resources */,
 				32768AB625502BDE0082A256 /* LICENSE in Resources */,
 				32419F5A2497118A0019B54D /* index.html in Resources */,
+				593A5EFD298B640E001857E6 /* TestHtmlJson.txt in Resources */,
 				3AB50AE41FC4817B0081CD33 /* LaunchScreen.storyboard in Resources */,
 				32768AB725502BDE0082A256 /* README.md in Resources */,
 				3ACA50061FCC6673006D5DAB /* images.xcassets in Resources */,
+				593A5F04298B6592001857E6 /* JCDTCoreTextDemoController.xib in Resources */,
 				3AB50AE11FC4817B0081CD33 /* Assets.xcassets in Resources */,
 				3AB50ADF1FC4817B0081CD33 /* Main.storyboard in Resources */,
 				59914D3E281A2CFB00DA979F /* JCSpecialFieldUseView.xib in Resources */,
@@ -1793,11 +1861,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests/Pods-DiSiYeMeiEr-DiSiYeMeiErUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
+				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
@@ -1813,11 +1885,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DiSiYeMeiEr/Pods-DiSiYeMeiEr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
+				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
@@ -1924,6 +2000,7 @@
 				32768A9225502BDE0082A256 /* UIScrollView+YYAdd.m in Sources */,
 				32768AAC25502BDE0082A256 /* YYThreadSafeDictionary.m in Sources */,
 				32768AB425502BDE0082A256 /* YYThreadSafeArray.m in Sources */,
+				59B988EC29E7DBD500AF3D89 /* JCTestMenuVC.m in Sources */,
 				32768A8325502BDE0082A256 /* YYTextRunDelegate.m in Sources */,
 				32768A8E25502BDE0082A256 /* UIColor+YYAdd.m in Sources */,
 				32768AA625502BDE0082A256 /* NSDictionary+YYAdd.m in Sources */,
@@ -1986,6 +2063,7 @@
 				599A5FCB28B9E383000F5E99 /* JCTestStudent.m in Sources */,
 				320D61D8239781E7005FFFBA /* JCSpeciesEmployeeTypeFinace.m in Sources */,
 				32768A6A25502BDD0082A256 /* YYWebImageManager.m in Sources */,
+				59D0C6D129F675B30060CFC5 /* JCCustomView.m in Sources */,
 				32768A7225502BDD0082A256 /* MKAnnotationView+YYWebImage.m in Sources */,
 				32768AB025502BDE0082A256 /* YYKeychain.m in Sources */,
 				32768A7025502BDD0082A256 /* UIButton+YYWebImage.m in Sources */,
@@ -2027,6 +2105,7 @@
 				32768A7925502BDD0082A256 /* YYTextMagnifier.m in Sources */,
 				32419F5B2497118A0019B54D /* WKWebViewConfiguration+Console.m in Sources */,
 				327FFE5725E5F47D00EEC87E /* JCTestObj.m in Sources */,
+				593A5F03298B6592001857E6 /* JCDTCoreTextDemoController.m in Sources */,
 				32768A9525502BDE0082A256 /* UIBarButtonItem+YYAdd.m in Sources */,
 				32768A9325502BDE0082A256 /* UIScreen+YYAdd.m in Sources */,
 				59114DAE27EC518C00CCD3CF /* JCPinchGestureViewController.m in Sources */,
@@ -2053,6 +2132,7 @@
 				32768A8D25502BDE0082A256 /* UIBezierPath+YYAdd.m in Sources */,
 				592DEC232817EFB1000091F0 /* UINavigationBar+JCNavigationBarHandle.m in Sources */,
 				3ACA50041FCC636C006D5DAB /* UIButton+customeBtn.m in Sources */,
+				5973EA1D29E7D32900BB8A0A /* JCCustomMenuView.m in Sources */,
 				32768A9F25502BDE0082A256 /* NSThread+YYAdd.m in Sources */,
 				593BAB8428839E0B00921DEE /* JCPhone.m in Sources */,
 				32768A9925502BDE0082A256 /* UIFont+YYAdd.m in Sources */,

@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "YYKit.h"
 #import "UIView+YYAdd.h"
+#import "NSAttributedString+YYText.h"
 
 /************************字体*******************************/
 //平方字体
@@ -99,6 +100,28 @@
 - (void)setAdjustableTextWithDesc:(NSString *)desc
 {
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:desc attributes:@{ NSFontAttributeName:FONT(15), NSParagraphStyleAttributeName : [self paragraphStyle]}];
+    
+    //边框
+//              YYTextBorder *border = [YYTextBorder new];
+//              border.lineStyle = YYTextLineStylePatternDash;
+//              border.strokeWidth = 1.0;
+//              border.strokeColor = [UIColor redColor];
+//              border.cornerRadius = 0;
+//              border.insets = UIEdgeInsetsMake(-2, -5.5, -2, -8);
+//              [text setTextBackgroundBorder:border range:NSMakeRange(0, 5)];
+    
+    
+    YYTextShadow *showText = [[YYTextShadow alloc] init];
+    showText.color = [UIColor greenColor];
+    YYTextDecoration *textDecoration = [YYTextDecoration decorationWithStyle:YYTextLineStyleSingle | YYTextLineStylePatternDash];
+    [textDecoration setStyle:YYTextLineStyleSingle | YYTextLineStylePatternDash];
+    textDecoration.color = [UIColor redColor];
+    textDecoration.shadow = showText;
+    [text setTextUnderline:textDecoration range:NSMakeRange(6, 10)];
+               
+    
+    
+    
     self.contentLabel.attributedText = text;
     
     WEAKSELF;
@@ -142,6 +165,7 @@
         make.top.bottom.left.right.mas_equalTo(self.contentBaseView);
     }];
 }
+
 #pragma mark ==========getter==========
 -(UIView *)contentBaseView{
     if (!_contentBaseView) {
@@ -153,4 +177,11 @@
     }
     return _contentBaseView ;
 }
+
+
+
+
+
+
+
 @end

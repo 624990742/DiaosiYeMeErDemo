@@ -34,20 +34,19 @@
 //    NSDate *currentDate = [NSDate date];
     
     
-    NSMutableString *word = [[NSMutableString alloc] initWithString:@"hello--"];
-    NSString *subStr = @"";
-    NSRange range = [word rangeOfString:@"-"];
-    if(range.location == 0){///头有"-"
-         subStr = [word substringWithRange:NSMakeRange(1, word.length - range.length)];
-    }else if (range.location == word.length - 1){
-        subStr = [word substringWithRange:NSMakeRange(0, word.length - range.length)];
-    }
-        
-        
+//    NSMutableString *word = [[NSMutableString alloc] initWithString:@"hello--"];
+//    NSString *subStr = @"";
+//    NSRange range = [word rangeOfString:@"-"];
+//    if(range.location == 0){///头有"-"
+//         subStr = [word substringWithRange:NSMakeRange(1, word.length - range.length)];
+//    }else if (range.location == word.length - 1){
+//        subStr = [word substringWithRange:NSMakeRange(0, word.length - range.length)];
+//    }
     
-    
-    NSLog(@"--subStr:%@",subStr);
-    
+    NSDictionary *infoDict = @{@"test":@"1"};
+    id testA1 = infoDict[@"a"];
+    id testA2 = [infoDict objectForKey:@"a"];
+    id testA3 = [infoDict valueForKey:@"a"];
     
     return YES;
 }

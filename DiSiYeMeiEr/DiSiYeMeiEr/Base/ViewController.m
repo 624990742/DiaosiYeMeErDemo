@@ -24,6 +24,9 @@
 #import "UINavigationBar+JCNavigationBarHandle.h"
 #import "JCProgressBarVC.h"
 #import "JCSpecialFieldUseController.h"
+#import "JCDTCoreTextDemoController.h"
+#import "JCTestMenuVC.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *DemoTableView;
 @property(nonatomic,strong) NSArray *dataScource;
@@ -37,6 +40,7 @@
     
    
     return @{
+        @"DTCoreTexDemo<加载HTML>": [[JCDTCoreTextDemoController alloc] init],
         @"MasonryDemo练习":[[JCMasExampleListViewController alloc] init],
         @"Runtime的使用":[[JCAssociatedObjectViewController alloc] init],
         @"设计模式只类族模式":[[JCSpeciesPatternViewController alloc] init],
@@ -51,7 +55,8 @@
         @"web 交互":[[JCtestVCViewController alloc] init],
         @"自定义进度条":[[JCProgressBarVC alloc] init],
         @"特殊关键字的使用方法":[[JCSpecialFieldUseController alloc] init],
-        @"11测试11": [[UIViewController alloc] init]
+        @"11测试11": [[UIViewController alloc] init],
+        @"自定义菜单测试": [[JCTestMenuVC alloc] init],
     };
 }
 
